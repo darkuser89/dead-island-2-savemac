@@ -1,0 +1,92 @@
+name: Publish macOS release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+concurrency:
+  group: macos-release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Validate release tag
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          python3 - <<'PY'
+          import os, re
+          if not re.fullmatch(r'v\d+\.\d+\.\d+', os.environ['RELEASE_TAG']):
+              raise SystemExit('Expected vMAJOR.MINOR.PATCH')
+          PY
+      - name: Test optimized native core and app
+        run: DI2_BUILD_DIR="$RUNNER_TEMP/DeadIsland2SaveMac" ./script/build_and_run.sh --release-test
+      - name: Build and validate universal app and ZIP
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: DI2_BUILD_DIR="$RUNNER_TEMP/DeadIsland2SaveMac" python3 script/package_macos_release.py --version "${RELEASE_TAG#v}"
+      - uses: actions/upload-artifact@v5
+        with:
+          name: macos-release
+          path: ${{ runner.temp }}/DeadIsland2SaveMac/Release/*
+          if-no-files-found: error
+          retention-days: 1
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v5
+        with:
+          name: macos-release
+          path: ${{ runner.temp }}/ReleaseAssets
+      - name: Publish verified download
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ github.ref_name }}
+          REPOSITORY: ${{ github.repository }}
+          RELEASE_COMMIT: ${{ github.sha }}
+          ASSET_DIRECTORY: ${{ runner.temp }}/ReleaseAssets
+        run: |
+          set -euo pipefail
+          VERSION="${RELEASE_TAG#v}"
+          ZIP="$ASSET_DIRECTORY/DeadIsland2SaveMac-$VERSION-macOS-universal.zip"
+          NOTES="$GITHUB_WORKSPACE/docs/releases/$VERSION.md"
+          test -f "$NOTES"
+          (cd "$ASSET_DIRECTORY" && sha256sum --check "$(basename "$ZIP").sha256")
+          if gh release view "$RELEASE_TAG" --repo "$REPOSITORY" --json isDraft,targetCommitish > "$RUNNER_TEMP/release-existing.json"; then
+            python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          data=json.loads((Path(os.environ['RUNNER_TEMP'])/'release-existing.json').read_text())
+          if not data['isDraft'] or data['targetCommitish'] != os.environ['RELEASE_COMMIT']:
+              raise SystemExit('Refusing to replace an existing published release or a different draft.')
+          PY
+          else
+            gh release create "$RELEASE_TAG" --repo "$REPOSITORY" --verify-tag --target "$RELEASE_COMMIT" --draft --title "Dead Island 2 Save Mac $VERSION" --notes-file "$NOTES"
+          fi
+          gh release upload "$RELEASE_TAG" "$ZIP" "$ZIP.sha256" --repo "$REPOSITORY" --clobber
+          gh release view "$RELEASE_TAG" --repo "$REPOSITORY" --json assets > "$RUNNER_TEMP/release-assets.json"
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          data=json.loads((Path(os.environ['RUNNER_TEMP'])/'release-assets.json').read_text())
+          assets={item['name']:item['size'] for item in data['assets']}
+          for file in Path(os.environ['ASSET_DIRECTORY']).iterdir():
+              if assets.get(file.name) != file.stat().st_size:
+                  raise SystemExit('Uploaded release asset size mismatch: '+file.name)
+          PY
+          gh release edit "$RELEASE_TAG" --repo "$REPOSITORY" --draft=false --latest

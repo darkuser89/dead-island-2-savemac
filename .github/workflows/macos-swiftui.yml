@@ -1,6 +1,7 @@
 name: Native macOS editor
 on:
   push:
+    branches: ['**']
     paths:
       - 'macOS/**'
       - 'DeadIsland2SaveMac.xcodeproj/**'

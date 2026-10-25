@@ -10,6 +10,14 @@ Version **0.4.1** · macOS **14+** als Deployment-Ziel · **AGPL-3.0-or-later**
 
 Änderungen je Version stehen im [Changelog](CHANGELOG.md).
 
+## Mac-App herunterladen
+
+Die fertige App steht unter [GitHub Releases](https://github.com/darkuser89/dead-island-2-savemac/releases/latest)
+als ZIP bereit: entpacken und `DeadIsland2SaveMac.app` nach Programme ziehen.
+Die Ausgabe ist für Apple Silicon und Intel gebaut (macOS 14+ als Ziel).
+Sie ist ad-hoc signiert und nicht Apple-notarisiert; macOS kann den ersten Start
+blockieren. Installation und Prüfsumme stehen in den jeweiligen Release-Hinweisen.
+
 ## Web-Version
 
 Der Editor enthält zusätzlich eine Browser-Oberfläche für dieselben unterstützten
@@ -200,7 +208,7 @@ keinen externen Editor-Prozess oder Netzwerkzugriff zum Bauen.
 
 Das Projekt wurde mit Xcode 27.1 auf Apple Silicon gebaut. macOS 14 ist das
 Deployment-Ziel; das ist keine bestätigte Testmatrix aller macOS- und
-Spielversionen. Intel ist als Xcode-Ziel konfigurierbar, aber nicht lokal getestet.
+Spielversionen. Der Download wird als Universal-Binary gebaut; Intel-Laufzeittests wurden nicht durchgeführt.
 Für die lokale Nutzung verwendet das Projekt Ad-hoc-Signierung.
 
 Die eingecheckte Projektdatei kann bei Strukturänderungen aus `project.yml`
@@ -235,6 +243,28 @@ Die aktuelle App liegt im Buildordner unter
 `DerivedData/Build/Products/Debug/DeadIsland2SaveMac.app`. Das Skript unterstützt
 auch `--debug`, `--logs` und `--telemetry`. `--core-test` prüft nur den Kern, ohne
 die laufende App zu ersetzen.
+
+## Release bauen
+
+```sh
+./script/build_and_run.sh --release-test
+python3 script/package_macos_release.py --version 0.4.1
+```
+
+Die Tests prüfen die optimierte Release-Konfiguration auf der Host-Architektur.
+Das Paketierungsskript baut anschließend die Universal-App ohne Testfreigabe,
+prüft beide Mach-O-Architekturen, eingebettete Ressourcen, Bibliothekspfade und
+Ad-hoc-Signaturen, entpackt das ZIP erneut zur Prüfung und schreibt die SHA-256-Datei.
+App und Download liegen im festen Buildordner unter
+`DerivedData/Build/Products/Release/DeadIsland2SaveMac.app` beziehungsweise `Release/`.
+Die App benötigt zur Laufzeit keine externen Bibliotheken oder den optionalen CLI-Editor.
+
+Ein Push eines Tags `vMAJOR.MINOR.PATCH` startet den Workflow
+`release-macos.yml`: Release-Tests, Universal-Build und Paketprüfung laufen vor der
+Veröffentlichung. Versions-Tag und Bundle-Version müssen übereinstimmen. Vorhandene
+veröffentlichte Releases werden nicht überschrieben. Dieser Ablauf benutzt keine
+Developer-ID-Zertifikate oder Notarisierungs-Zugangsdaten und erzeugt ausdrücklich
+eine ad-hoc signierte Ausgabe.
 
 ## Original speichern und Backup
 
