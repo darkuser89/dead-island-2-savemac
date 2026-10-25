@@ -1,5 +1,15 @@
 # Changelog
 
+## Web-Erweiterung
+
+- Browser-Oberfläche für alle acht unterstützten Editorbereiche ergänzt.
+- Vorhandenen Swift-/Zstd-/CityHash-Kern als WebAssembly wiederverwendet;
+  Dateiverarbeitung und Änderungen laufen in einem lokalen Web Worker.
+- Original-Backup, geprüften Save-Download, Rückgängig/Wiederholen und
+  abbrechbare Verarbeitung ergänzt.
+- Reproduzierbaren separaten Web-Build, synthetische Integrationstests und
+  GitHub-Pages-Workflow ergänzt.
+
 ## 0.4.1
 
 - Datei- und Exportdialoge an das zugehörige Editorfenster gebunden; jeweils nur

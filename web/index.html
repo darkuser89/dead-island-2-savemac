@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Dead Island 2 · Save Editor Web</title>
+  <link rel="icon" href="./icon.png" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><img src="./icon.png" alt="" width="44" height="44"><span>Dead Island 2 <strong>Save Editor</strong></span><span class="badge">WEB</span></a>
+    <div class="toolbar">
+      <button id="open" class="primary">Save öffnen</button>
+      <button id="backup" disabled>Original sichern</button>
+      <button id="download" disabled>Save herunterladen</button>
+    </div>
+  </header>
+  <div id="error" role="alert" hidden></div>
+  <div class="workspace">
+    <aside>
+      <div class="eyebrow">SPIELSTAND</div>
+      <p id="filename">Keine Datei geöffnet</p>
+      <label class="stack">Version<select id="platform"><option value="unknown">Manuell gewählt</option><option value="mas">Mac App Store</option><option value="steam">Steam</option></select></label>
+      <label class="stack">Charakter / Lager<select id="profile" disabled></select></label>
+      <nav id="sections" aria-label="Editorbereiche"></nav>
+      <div class="aside-note"><strong>Bleibt auf deinem Gerät.</strong><p>Dein Save wird im Browser verarbeitet und nicht hochgeladen. Beende das Spiel vor dem Ersetzen einer Datei.</p></div>
+    </aside>
+    <main>
+      <div class="mainbar">
+        <div><div class="eyebrow">DEIN SPIELSTAND. DEINE ÄNDERUNGEN.</div><h1 id="heading">Bereit für HELL-A?</h1></div>
+        <div class="history"><button id="apply" disabled>Werte übernehmen</button><button id="undo" disabled title="Rückgängig (⌘/Strg+Z)">↶ <span>Zurück</span></button><button id="redo" disabled title="Wiederholen (⇧⌘/Strg+Z)">↷ <span>Weiter</span></button><button id="reset" disabled>Zurücksetzen</button></div>
+      </div>
+      <div class="searchbar"><input id="search" type="search" placeholder="Werte, Gegenstände oder IDs suchen …" aria-label="Editor durchsuchen" disabled><span id="count"></span></div>
+      <section id="content" aria-label="Save-Editor">
+        <div class="welcome"><img src="./icon.png" width="128" height="128" alt="Machete vor tropischem Sonnenuntergang"><h2>Dein Save, direkt im Browser.</h2><p>Wähle einen Dead-Island-2-Spielstand, passe ihn an und lade die geprüfte Datei herunter.</p><p class="muted">Charakter · Inventar · Quests · Skillkarten · Sammlungen · Weltzustände</p><button id="welcome-open" class="primary">.sav-Datei auswählen</button><p class="small">MAS- und Steam-Saves · keine Anmeldung · keine Datei-Uploads</p></div>
+      </section>
+    </main>
+  </div>
+  <footer><span id="status" role="status" aria-live="polite">Save-Kern wird geladen …</span><span><a href="https://github.com/darkuser89/dead-island-2-savemac/tree/native-swiftui-mac-editor" target="_blank" rel="noreferrer">Quellcode</a> · <a href="./licenses/AGPL-3.0.txt">AGPL-3.0</a> · <a href="./licenses.html">Bibliotheken</a></span></footer>
+  <dialog id="busy"><div class="spinner" aria-hidden="true"></div><h2 id="busy-label">Spielstand wird geprüft …</h2><p>Die Oberfläche wartet auf den Save-Kern.</p><button id="cancel">Abbrechen</button></dialog>
+  <input id="save-input" type="file" accept=".sav" hidden>
+  <input id="items-input" type="file" accept=".csv" hidden>
+  <input id="upgrades-input" type="file" accept=".csv" hidden>
+  <input id="unlocks-input" type="file" accept=".sav" hidden>
+  <noscript>Für den Save-Editor müssen JavaScript und WebAssembly aktiviert sein.</noscript>
+</body>
+</html>

@@ -1,0 +1,74 @@
+name: Web editor · GitHub Pages
+on:
+  push:
+    branches: [native-swiftui-mac-editor]
+    paths:
+      - 'web/**'
+      - 'macOS/SaveCore/**'
+      - 'macOS/NativeCodec/**'
+      - 'macOS/ThirdParty/**'
+      - 'macOS/SaveMac/Resources/**'
+      - 'macOS/SaveMac/Assets.xcassets/**'
+      - 'script/build_web.py'
+      - '.github/workflows/web-pages.yml'
+  pull_request:
+    paths:
+      - 'web/**'
+      - 'macOS/SaveCore/**'
+      - 'macOS/NativeCodec/**'
+      - 'macOS/ThirdParty/**'
+      - 'macOS/SaveMac/Resources/**'
+      - 'macOS/SaveMac/Assets.xcassets/**'
+      - 'script/build_web.py'
+      - '.github/workflows/web-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: web-pages-${{ github.event_name == 'pull_request' && github.ref || 'production' }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 35
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Build shared Swift save core for the browser
+        run: DI2_BUILD_DIR="$RUNNER_TEMP/DeadIsland2SaveMac" python3 script/build_web.py --setup --test
+      - name: Test browser core with synthetic saves
+        run: node web/tests/run.mjs "$RUNNER_TEMP/DeadIsland2SaveMac/Web/Site"
+      - name: Configure Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+      - name: Upload only the built website
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ runner.temp }}/DeadIsland2SaveMac/Web/Site
+          retention-days: 1
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish web editor
+        id: deployment
+        uses: actions/deploy-pages@v4

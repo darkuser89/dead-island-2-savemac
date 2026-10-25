@@ -10,6 +10,19 @@ Version **0.4.1** · macOS **14+** als Deployment-Ziel · **AGPL-3.0-or-later**
 
 Änderungen je Version stehen im [Changelog](CHANGELOG.md).
 
+## Web-Version
+
+Der Editor enthält zusätzlich eine Browser-Oberfläche für dieselben unterstützten
+Save-Bearbeitungen. Der vorhandene Swift-Kern wird als WebAssembly wiederverwendet;
+Save-Dateien bleiben im Arbeitsspeicher des Browsers und werden nicht hochgeladen.
+Original-Backup und bearbeiteten Save separat herunterladen und die Datei bei
+beendetem Spiel selbst ersetzen. Automatische Mac-Pfadsuche und Cloud-Abgleich
+bleiben Aufgaben der nativen Umgebung beziehungsweise des Spiels.
+
+[Web-Editor öffnen](https://darkuser89.github.io/dead-island-2-savemac/).
+Funktionen, Browsergrenzen, lokaler Build und GitHub Pages stehen in der
+[Web-Anleitung](web/README.md).
+
 ## Funktionen
 
 - Lokale Mac-Spielstände der Steam- und Mac-App-Store-Version finden und öffnen.
