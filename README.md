@@ -6,7 +6,7 @@ Eigenständiger macOS-Save-Editor mit **SwiftUI**, einem direkt öffnenden
 **Xcode-Projekt** und eigenem Lese-/Schreibkern. Keine Installation von `di2save`,
 Python-Paketen oder Homebrew-Bibliotheken für die App nötig.
 
-Version **0.4.1** · macOS **14+** als Deployment-Ziel · **AGPL-3.0-or-later**
+Version **0.4.2** · macOS **14+** als Deployment-Ziel · **AGPL-3.0-or-later**
 
 Änderungen je Version stehen im [Changelog](CHANGELOG.md).
 
@@ -248,7 +248,7 @@ die laufende App zu ersetzen.
 
 ```sh
 ./script/build_and_run.sh --release-test
-python3 script/package_macos_release.py --version 0.4.1
+python3 script/package_macos_release.py --version 0.4.2
 ```
 
 Die Tests prüfen die optimierte Release-Konfiguration auf der Host-Architektur.

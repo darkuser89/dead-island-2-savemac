@@ -11,8 +11,8 @@ settings:
     CODE_SIGN_IDENTITY: '-'
     CODE_SIGN_STYLE: Manual
     CLANG_CXX_LANGUAGE_STANDARD: c++17
-    MARKETING_VERSION: 0.4.1
-    CURRENT_PROJECT_VERSION: 8
+    MARKETING_VERSION: 0.4.2
+    CURRENT_PROJECT_VERSION: 9
     SWIFT_INCLUDE_PATHS: '$(SRCROOT)/macOS/NativeCodec'
 targets:
   NativeCodec:
@@ -66,7 +66,8 @@ targets:
         INFOPLIST_KEY_CFBundleDisplayName: Dead Island 2 Save Mac
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
-        ENABLE_HARDENED_RUNTIME: YES
+        # Ad-hoc app/framework signatures cannot satisfy Team-ID library validation.
+        ENABLE_HARDENED_RUNTIME: NO
         ENABLE_APP_SANDBOX: NO
         LD_RUNPATH_SEARCH_PATHS: '$(inherited) @executable_path/../Frameworks'
   SaveMacVerify:

@@ -10,6 +10,12 @@
 - Reproduzierbaren separaten Web-Build, synthetische Integrationstests und
   GitHub-Pages-Workflow ergänzt.
 
+## 0.4.2
+
+- Ad-hoc-Distribution ohne Hardened Runtime bauen, damit das eingebettete
+  Save-Framework keine nicht erfüllbare Team-ID-Validierung auslöst.
+- Startprüfung der entpackten Release-App vor dem Veröffentlichen ergänzen.
+
 ## 0.4.1
 
 - Datei- und Exportdialoge an das zugehörige Editorfenster gebunden; jeweils nur

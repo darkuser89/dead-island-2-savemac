@@ -8,7 +8,30 @@ concurrency:
   group: macos-release-${{ github.ref }}
   cancel-in-progress: false
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Withdraw invalid v0.4.1 binary
+        if: github.repository == 'darkuser89/dead-island-2-savemac' && github.ref_name == 'v0.4.2'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          gh release view v0.4.1 --repo "$REPOSITORY" --json targetCommitish > "$RUNNER_TEMP/previous-release.json"
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          data=json.loads((Path(os.environ['RUNNER_TEMP'])/'previous-release.json').read_text())
+          if data['targetCommitish'] != '379ea608b2e77e59e0a87ac35016a56e80f9ac9e':
+              raise SystemExit('Refusing to alter an unrelated release.')
+          PY
+          gh release edit v0.4.1 --repo "$REPOSITORY" --draft=true
   build:
+    needs: prepare
     runs-on: macos-15
     timeout-minutes: 20
     steps:
@@ -32,7 +55,7 @@ jobs:
       - name: Build and validate universal app and ZIP
         env:
           RELEASE_TAG: ${{ github.ref_name }}
-        run: DI2_BUILD_DIR="$RUNNER_TEMP/DeadIsland2SaveMac" python3 script/package_macos_release.py --version "${RELEASE_TAG#v}"
+        run: DI2_BUILD_DIR="$RUNNER_TEMP/DeadIsland2SaveMac" python3 script/package_macos_release.py --version "${RELEASE_TAG#v}" --smoke-test
       - uses: actions/upload-artifact@v5
         with:
           name: macos-release
