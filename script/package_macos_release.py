@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: AGPL-3.0-or-later
-"""Build, validate and ZIP one universal macOS release outside the source tree."""
+"""Build, validate and ZIP one Apple Silicon macOS release outside the source tree."""
 import argparse
 import hashlib
 import os
@@ -39,8 +39,8 @@ def validate(app, version):
     binaries = [app / 'Contents/MacOS/DeadIsland2SaveMac',
                 app / 'Contents/Frameworks/SaveCore.framework/Versions/A/SaveCore']
     for binary in binaries:
-        if set(output('xcrun', 'lipo', '-archs', binary).split()) != {'arm64', 'x86_64'}:
-            raise SystemExit(f'Universal architectures missing: {binary.name}')
+        if set(output('xcrun', 'lipo', '-archs', binary).split()) != {'arm64'}:
+            raise SystemExit(f'Expected Apple Silicon arm64 only: {binary.name}')
         for line in output('xcrun', 'otool', '-L', binary).splitlines():
             if ' (compatibility version ' not in line:
                 continue
@@ -104,7 +104,7 @@ def main():
     info = validate(app, args.version)
     destination = build / 'Release'
     destination.mkdir(parents=True, exist_ok=True)
-    archive = destination / f'DeadIsland2SaveMac-{args.version}-macOS-universal.zip'
+    archive = destination / f'DeadIsland2SaveMac-{args.version}-macOS-arm64.zip'
     # A short-lived replacement ZIP protects the previous checked download on failure.
     with tempfile.TemporaryDirectory(prefix='release-check-', dir=build) as work:
         temporary = Path(work) / archive.name
@@ -121,7 +121,7 @@ def main():
     checksum.write_text(f'{digest}  {archive.name}\n')
     print(f'Release {args.version} ({info["CFBundleVersion"]}): {archive}')
     print(f'SHA-256: {digest}')
-    print('arm64 + x86_64; ad-hoc signed; not notarized.')
+    print('Apple Silicon arm64; ad-hoc signed; not notarized.')
 
 
 if __name__ == '__main__':

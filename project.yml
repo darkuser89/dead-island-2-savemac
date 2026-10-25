@@ -6,13 +6,14 @@ options:
   createIntermediateGroups: true
 settings:
   base:
+    ARCHS: arm64
     SWIFT_VERSION: '5.0'
     MACOSX_DEPLOYMENT_TARGET: '14.0'
     CODE_SIGN_IDENTITY: '-'
     CODE_SIGN_STYLE: Manual
     CLANG_CXX_LANGUAGE_STANDARD: c++17
-    MARKETING_VERSION: 0.4.2
-    CURRENT_PROJECT_VERSION: 9
+    MARKETING_VERSION: 0.4.3
+    CURRENT_PROJECT_VERSION: 10
     SWIFT_INCLUDE_PATHS: '$(SRCROOT)/macOS/NativeCodec'
 targets:
   NativeCodec:

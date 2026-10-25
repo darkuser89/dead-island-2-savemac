@@ -6,7 +6,7 @@ Eigenständiger macOS-Save-Editor mit **SwiftUI**, einem direkt öffnenden
 **Xcode-Projekt** und eigenem Lese-/Schreibkern. Keine Installation von `di2save`,
 Python-Paketen oder Homebrew-Bibliotheken für die App nötig.
 
-Version **0.4.2** · macOS **14+** als Deployment-Ziel · **AGPL-3.0-or-later**
+Version **0.4.3** · macOS **14+** als Deployment-Ziel · **AGPL-3.0-or-later**
 
 Änderungen je Version stehen im [Changelog](CHANGELOG.md).
 
@@ -14,7 +14,7 @@ Version **0.4.2** · macOS **14+** als Deployment-Ziel · **AGPL-3.0-or-later**
 
 Die fertige App steht unter [GitHub Releases](https://github.com/darkuser89/dead-island-2-savemac/releases/latest)
 als ZIP bereit: entpacken und `DeadIsland2SaveMac.app` nach Programme ziehen.
-Die Ausgabe ist für Apple Silicon und Intel gebaut (macOS 14+ als Ziel).
+Die Ausgabe ist für Apple Silicon (`arm64`) gebaut (macOS 14+ als Ziel).
 Sie ist ad-hoc signiert und nicht Apple-notarisiert; macOS kann den ersten Start
 blockieren. Installation und Prüfsumme stehen in den jeweiligen Release-Hinweisen.
 
@@ -208,7 +208,7 @@ keinen externen Editor-Prozess oder Netzwerkzugriff zum Bauen.
 
 Das Projekt wurde mit Xcode 27.1 auf Apple Silicon gebaut. macOS 14 ist das
 Deployment-Ziel; das ist keine bestätigte Testmatrix aller macOS- und
-Spielversionen. Der Download wird als Universal-Binary gebaut; Intel-Laufzeittests wurden nicht durchgeführt.
+Spielversionen. Die native App und ihr Save-Framework werden ausschließlich für Apple Silicon (`arm64`) gebaut.
 Für die lokale Nutzung verwendet das Projekt Ad-hoc-Signierung.
 
 Die eingecheckte Projektdatei kann bei Strukturänderungen aus `project.yml`
@@ -248,19 +248,19 @@ die laufende App zu ersetzen.
 
 ```sh
 ./script/build_and_run.sh --release-test
-python3 script/package_macos_release.py --version 0.4.2
+python3 script/package_macos_release.py --version 0.4.3
 ```
 
 Die Tests prüfen die optimierte Release-Konfiguration auf der Host-Architektur.
-Das Paketierungsskript baut anschließend die Universal-App ohne Testfreigabe,
-prüft beide Mach-O-Architekturen, eingebettete Ressourcen, Bibliothekspfade und
+Das Paketierungsskript baut anschließend die Apple-Silicon-App ohne Testfreigabe,
+prüft die ausschließliche Mach-O-Architektur `arm64`, eingebettete Ressourcen, Bibliothekspfade und
 Ad-hoc-Signaturen, entpackt das ZIP erneut zur Prüfung und schreibt die SHA-256-Datei.
 App und Download liegen im festen Buildordner unter
 `DerivedData/Build/Products/Release/DeadIsland2SaveMac.app` beziehungsweise `Release/`.
 Die App benötigt zur Laufzeit keine externen Bibliotheken oder den optionalen CLI-Editor.
 
 Ein Push eines Tags `vMAJOR.MINOR.PATCH` startet den Workflow
-`release-macos.yml`: Release-Tests, Universal-Build und Paketprüfung laufen vor der
+`release-macos.yml`: Release-Tests, Apple-Silicon-Build und Paketprüfung laufen vor der
 Veröffentlichung. Versions-Tag und Bundle-Version müssen übereinstimmen. Vorhandene
 veröffentlichte Releases werden nicht überschrieben. Dieser Ablauf benutzt keine
 Developer-ID-Zertifikate oder Notarisierungs-Zugangsdaten und erzeugt ausdrücklich

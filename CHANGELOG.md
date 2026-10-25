@@ -10,6 +10,12 @@
 - Reproduzierbaren separaten Web-Build, synthetische Integrationstests und
   GitHub-Pages-Workflow ergänzt.
 
+## 0.4.3
+
+- Native App, Save-Framework und Release-ZIP ausschließlich für Apple Silicon
+  (`arm64`) bauen; Intel-Anteil des Downloads entfällt.
+- Architekturprüfung und Release-Anleitung auf Apple Silicon umstellen.
+
 ## 0.4.2
 
 - Ad-hoc-Distribution ohne Hardened Runtime bauen, damit das eingebettete

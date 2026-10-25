@@ -18,7 +18,7 @@ if [[ "$MODE" == --release || "$MODE" == --release-test ]]; then
     CONFIGURATION=Release
 fi
 if [[ "$MODE" == --release ]]; then
-    BUILD_OPTIONS=("ARCHS=arm64 x86_64" ONLY_ACTIVE_ARCH=NO)
+    BUILD_OPTIONS=(ARCHS=arm64 ONLY_ACTIVE_ARCH=NO)
 fi
 APP="$BUILD_ROOT/DerivedData/Build/Products/$CONFIGURATION/DeadIsland2SaveMac.app"
 case "$MODE" in
