@@ -75,7 +75,6 @@
 		8537EE6A5A2ACD8FC183111A /* zstd_opt.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D039FEA4F5D1B84E74E08756 /* zstd_opt.h */; };
 		8836B70C0B595DBA7A3E822C /* SaveFileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038218CD81597B8006986444 /* SaveFileLoader.swift */; };
 		895D1F7E75C190B625FEBB02 /* zstd_trace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A5DF254AD9C72B4607D566C3 /* zstd_trace.h */; };
-		8A25B24BAC6E2B7132E05372 /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = D44BF4D88E6C2F9E371A3C8B /* module.modulemap */; };
 		8A313D6993BB555B4E4429F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4B571CF2B171CF34FC9C5F /* ContentView.swift */; };
 		8A3E99807D6463734FE5956E /* zstd_deps.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FF8B9F0FE3B4764634512421 /* zstd_deps.h */; };
 		8AFFB57A7242AD8267EA18C1 /* entropy_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B21EAAE41641C3925AFAFF8 /* entropy_common.c */; };
@@ -232,7 +231,6 @@
 				65318471D3AB7F7C3B56DA04 /* hist.h in CopyFiles */,
 				12CF614C38E79566063210B5 /* huf.h in CopyFiles */,
 				F9E09FC540D0ADD7192BF0EA /* mem.h in CopyFiles */,
-				8A25B24BAC6E2B7132E05372 /* module.modulemap in CopyFiles */,
 				F2A8E6508799367DF0C627F2 /* pool.h in CopyFiles */,
 				8D477FD99B2F769AABB6CFCF /* portability_macros.h in CopyFiles */,
 				3611799A014D0B9D1C337AEC /* threading.h in CopyFiles */,
@@ -390,7 +388,6 @@
 		D02069AE307451161CA92C04 /* error_private.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = error_private.c; sourceTree = "<group>"; };
 		D039FEA4F5D1B84E74E08756 /* zstd_opt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_opt.h; sourceTree = "<group>"; };
 		D20661C043B7469E2C260CC6 /* ProgressPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressPreview.swift; sourceTree = "<group>"; };
-		D44BF4D88E6C2F9E371A3C8B /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D94714AF4F06AF36707CF493 /* SkillEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEditorView.swift; sourceTree = "<group>"; };
 		DA1BFC6DFA9E936AF1DB847A /* EditorStore+Unlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorStore+Unlocks.swift"; sourceTree = "<group>"; };
 		DA29D31821EA0AAB4F7F5BEF /* QuestProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestProgress.swift; sourceTree = "<group>"; };
@@ -511,7 +508,6 @@
 		3C08A66DC1DDA7CF7B7E5BED /* NativeCodec */ = {
 			isa = PBXGroup;
 			children = (
-				D44BF4D88E6C2F9E371A3C8B /* module.modulemap */,
 				729DF5E5A4164E1A47D78FC7 /* NativeCodec.cpp */,
 				E5CFE9DAD5BCE1F699F9DA4F /* NativeCodec.h */,
 			);

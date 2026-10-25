@@ -20,6 +20,9 @@ targets:
     platform: macOS
     sources:
       - path: macOS/NativeCodec
+        # Swift imports the source module map via SWIFT_INCLUDE_PATHS.
+        # Copying it into Products/include defines the same module twice on Xcode 16.
+        excludes: [module.modulemap]
       - path: macOS/ThirdParty/cityhash
         excludes: [COPYING, config.h]
       - path: macOS/ThirdParty/zstd/lib
