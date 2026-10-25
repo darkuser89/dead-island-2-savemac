@@ -1,0 +1,152 @@
+{
+  "blueprints": [
+    {
+      "name": "DT_GameEntitlement_Recipe",
+      "rows": [
+        "Item_Pickup_HeavyRounds",
+        "Item_Pickup_Medikit",
+        "Item_Pickup_NailgunRounds",
+        "Item_Pickup_PistolRounds",
+        "Item_Pickup_RifleRounds",
+        "Item_Pickup_ShotgunRounds",
+        "Weapon_Mod_Acid_Level_1_Melee",
+        "Weapon_Mod_Acid_Level_1_Ranged",
+        "Weapon_Mod_Acid_Level_2_Melee",
+        "Weapon_Mod_Acid_Level_2_Ranged",
+        "Weapon_Mod_Acid_Level_3_Melee",
+        "Weapon_Mod_Acid_Level_3_Ranged",
+        "Weapon_Mod_Bleed_Level_1_Melee",
+        "Weapon_Mod_Bleed_Level_1_Ranged",
+        "Weapon_Mod_Bleed_Level_2_Melee",
+        "Weapon_Mod_Bleed_Level_2_Ranged",
+        "Weapon_Mod_Bleed_Level_3_Melee",
+        "Weapon_Mod_Bleed_Level_3_Ranged",
+        "Weapon_Mod_Fire_Level_1_Melee",
+        "Weapon_Mod_Fire_Level_1_Ranged",
+        "Weapon_Mod_Fire_Level_2_Melee",
+        "Weapon_Mod_Fire_Level_2_Ranged",
+        "Weapon_Mod_Fire_Level_3_Melee",
+        "Weapon_Mod_Fire_Level_3_Ranged",
+        "Weapon_Mod_Impact_Level_1_Melee",
+        "Weapon_Mod_Impact_Level_1_Ranged",
+        "Weapon_Mod_Impact_Level_2_Melee",
+        "Weapon_Mod_Impact_Level_2_Ranged",
+        "Weapon_Mod_Impact_Level_3_Melee",
+        "Weapon_Mod_Impact_Level_3_Ranged",
+        "Weapon_Mod_Shock_Level_1_Ranged",
+        "Weapon_Mod_Shock_Level_2_Melee",
+        "Weapon_Mod_Shock_Level_2_Ranged",
+        "Weapon_Mod_Shock_Level_3_Melee",
+        "Weapon_Mod_Shock_Level_3_Ranged",
+        "Weapon_Mod_Tearing_Level_1_Melee",
+        "Weapon_Mod_Tearing_Level_1_Ranged",
+        "Weapon_Mod_Tearing_Level_2_Melee",
+        "Weapon_Mod_Tearing_Level_2_Ranged",
+        "Weapon_Mod_Tearing_Level_3_Melee",
+        "Weapon_Mod_Tearing_Level_3_Ranged"
+      ]
+    },
+    {
+      "name": "DT_GameEntitlement_Recipe_Exp01",
+      "rows": [
+        "Item_Pickup_CrossbowBolts"
+      ]
+    },
+    {
+      "name": "DT_GameEntitlement_Recipe_Exp02",
+      "rows": [
+        "Item_Pickup_SawbladeDisks"
+      ]
+    },
+    {
+      "name": "DT_GameEntitlement_WeaponPerks",
+      "rows": [
+        "AcidRain",
+        "AddFuryOnWeaponKill",
+        "AddHealthRegenOnDamage",
+        "AddHealthRegenOnWeaponKill",
+        "AddStaminaOnWeaponKillOrCriticalHit",
+        "Balanced",
+        "Contagious",
+        "Empowering",
+        "Energizing",
+        "Hazardous",
+        "HeadExplodeOnKill",
+        "Honed",
+        "IncreaseAccuracyWhenAimDownSights",
+        "IncreaseAgilityOnWeaponKill",
+        "IncreaseDamageAndFuryGainOnWeaponKill",
+        "IncreaseDamageOnLowAmmo",
+        "IncreaseDamageOnWeaponKill",
+        "IncreaseDamageWhenOwnerStunned",
+        "IncreasedAttackSpeedDecreaseForce",
+        "IncreasedDamageOnSameTarget",
+        "IncreaseDurabilityIncreaseLimbDamage",
+        "IncreaseDurabilityIncreaseStaminaCost",
+        "IncreaseForceAndReducedAttackSpeed",
+        "IncreaseOwnerDamageOnOwnerLowHealth",
+        "IncreaseOwnerDamageOnWeaponCriticalHit",
+        "IncreaseOwnerDefence",
+        "IncreaseRateOfFireAndRecoil",
+        "IncreaseRecoilDecreaseMagazineSize",
+        "IncreaseReloadSpeed",
+        "IncreaseReloadSpeedOnWeaponKill",
+        "IncreaseWeaponDamageWhenOwnerLowHealth",
+        "Infectious",
+        "PrecisionShots",
+        "Primed",
+        "Shockwave",
+        "SpawnExplosionOnWeaponKill",
+        "StaticCharge",
+        "TearNSear",
+        "Vigilant",
+        "IncreaseDamage",
+        "Skilled",
+        "Unstable"
+      ]
+    },
+    {
+      "name": "DT_GameEntitlement_WeaponPerks_Exp01",
+      "rows": [
+        "Hardball",
+        "HunterKiller",
+        "MakeItCount",
+        "Opportunist",
+        "Sizzler"
+      ]
+    },
+    {
+      "name": "DT_GameEntitlement_WeaponPerks_Exp02",
+      "rows": [
+        "Barbaric",
+        "Bullseye",
+        "Pentup",
+        "PowerHit",
+        "Provisioning",
+        "RubberBullets",
+        "Siphon",
+        "Timeout"
+      ]
+    }
+  ],
+  "curveballs": [
+    {
+      "name": "DT_GameEntitlement_Throwables",
+      "rows": [
+        "Throwable_AcidBomb",
+        "Throwable_BaitBomb",
+        "Throwable_ChemBomb",
+        "Throwable_ElectricBomb",
+        "Throwable_ElectricStar",
+        "Throwable_Flashbang",
+        "Throwable_InsectSwarmCurveball",
+        "Throwable_MilitaryGrenade",
+        "Throwable_MolotovCocktail",
+        "Throwable_NailBomb",
+        "Throwable_PipeBomb",
+        "Throwable_Shuriken",
+        "Throwable_StickyBomb"
+      ]
+    }
+  ]
+}

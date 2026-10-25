@@ -1,0 +1,2 @@
+google-cloud-storage==3.7.0
+patch-ng==1.19.0

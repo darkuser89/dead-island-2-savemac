@@ -1,0 +1,1076 @@
+{
+  "schema": 1,
+  "context": "standard-first-completion",
+  "definitions": [
+    {
+      "id": "MIS_EndGame",
+      "questPath": "/Game/DI2/Missions/MIS_EndGame/MIS_EndGame",
+      "questExportSHA256": "b2119a4fb3a4879f79c6fdaafc5dae4868437b0a6201b125c3930273418efd0e",
+      "xp": 0,
+      "cash": 0,
+      "other": [],
+      "rewardPath": null,
+      "exportSHA256": null
+    },
+    {
+      "id": "MIS_Exp01_Haus_Act01",
+      "questPath": "/Game/DI2/Expansion01/Mission/MIS_Haus/MIS_Exp01_Haus_Act01",
+      "questExportSHA256": "a252c38938eba6360a438d9b3d3b28b86a92a054c62e0868af1113942a1b4647",
+      "xp": 1250,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion01/BalancingData/Rewards/DA_RewardSetData_Exp1_Act01a",
+      "exportSHA256": "fc8828eda750c05dd4390f69a3a82e0d4a4d96acb9b6592d929b6933cd1a45f8"
+    },
+    {
+      "id": "MIS_Exp01_Haus_Act01b",
+      "questPath": "/Game/DI2/Expansion01/Mission/MIS_Haus/MIS_Exp01_Haus_Act01b",
+      "questExportSHA256": "6d31688f8aaa107fa098fb895cfc185950d7938ad513fac22a0d0d679c6ab503",
+      "xp": 1250,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion01/BalancingData/Rewards/DA_RewardSetData_Exp1_Act01b",
+      "exportSHA256": "fc8828eda750c05dd4390f69a3a82e0d4a4d96acb9b6592d929b6933cd1a45f8"
+    },
+    {
+      "id": "MIS_Exp01_Haus_Act01c",
+      "questPath": "/Game/DI2/Expansion01/Mission/MIS_Haus/MIS_Exp01_Haus_Act01c",
+      "questExportSHA256": "d1f21c723c1981dc25cb18a346e407bfed139e5a004dbd5c532f5137bd1c91b7",
+      "xp": 1000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion01/BalancingData/Rewards/DA_RewardSetData_Exp1_Act01c",
+      "exportSHA256": "859bd9dc8bb5c4adb787bb641530f9a2a55187061f575e4db1e96635f94b67f0"
+    },
+    {
+      "id": "MIS_Exp01_Haus_Act01d",
+      "questPath": "/Game/DI2/Expansion01/Mission/MIS_Haus/MIS_Exp01_Haus_Act01d",
+      "questExportSHA256": "7dd3b57264934aed9e69930e9a783369eed56cdc1b306282d19fdeb3c3f0f44e",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion01/BalancingData/Rewards/DA_RewardSetData_Exp1_Act01d",
+      "exportSHA256": "84c93f7e42da0e1dd1bb79268b5c52b71d9028e60fb25fab8f6f53e838b20c16"
+    },
+    {
+      "id": "MIS_Exp01_Haus_Act01e",
+      "questPath": "/Game/DI2/Expansion01/Mission/MIS_Haus/MIS_Exp01_Haus_Act01e",
+      "questExportSHA256": "0f1123b5c06739720aec12eb1844b0758abff1145c5882f39867c1188b3357be",
+      "xp": 1000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion01/BalancingData/Rewards/DA_RewardSetData_Exp1_Act01e",
+      "exportSHA256": "57e88a3c8ae628d004aeff4135185bc0d82923faa5e4b8a9172bad30cb4d1400"
+    },
+    {
+      "id": "MIS_Exp01_Haus_Act02",
+      "questPath": "/Game/DI2/Expansion01/Mission/MIS_Haus/MIS_Exp01_Haus_Act02",
+      "questExportSHA256": "9e329c0205c051d5bcefe2e1405a05ed59b7eafd9f9fab92c7302908bc3e80d7",
+      "xp": 2000,
+      "cash": 0,
+      "other": [
+        "BP_IndividualGameReward_Loot_C"
+      ],
+      "rewardPath": "/Game/DI2/Expansion01/BalancingData/Rewards/DA_RewardSetData_Exp1_Act03",
+      "exportSHA256": "9be18cad73d38172f3b36fc4c426262e2a978c8157f8d9af7ce69caee917525b"
+    },
+    {
+      "id": "MIS_EXP02_ENDGAME_MainEnd",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_EndGame/MIS_EXP02_ENDGAME_MainEnd",
+      "questExportSHA256": "2ed698a7e389da82752e05c19dcbc6cc732174fd0a24b5211d0f05b10d092ddc",
+      "xp": 0,
+      "cash": 0,
+      "other": [],
+      "rewardPath": null,
+      "exportSHA256": null
+    },
+    {
+      "id": "MIS_EXP02_ENDGAME_MainStart",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_EndGame/MIS_EXP02_ENDGAME_MainStart",
+      "questExportSHA256": "5fd494697e4a5bf5718c1e8ede1e13d2b5d057461ae3b8b574c6e546dc9dffb2",
+      "xp": 0,
+      "cash": 0,
+      "other": [],
+      "rewardPath": null,
+      "exportSHA256": null
+    },
+    {
+      "id": "MIS_Exp02_MQ01A",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_MQ/MIS_Exp02_MQ01/MIS_Exp02_MQ01A/MIS_Exp02_MQ01A",
+      "questExportSHA256": "3a67be0144808440b914f66f91d76cde7e6c4a8471b4600296a056e5d65cce4e",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion02/BalancingData/Rewards/DA_RewardSetData_Exp02_MQ01A",
+      "exportSHA256": "96af519fc4dcbb06dc6dce093edba9ed2193df7f3408b5ef4512602450ab39e2"
+    },
+    {
+      "id": "MIS_Exp02_MQ01C",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_MQ/MIS_Exp02_MQ01/MIS_Exp02_MQ01C/MIS_Exp02_MQ01C",
+      "questExportSHA256": "bb73937fac12613cc17da56bbc861addf6bb03240f8d6b3c27272f926b11bc6e",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion02/BalancingData/Rewards/DA_RewardSetData_Exp02_MQ01C",
+      "exportSHA256": "96af519fc4dcbb06dc6dce093edba9ed2193df7f3408b5ef4512602450ab39e2"
+    },
+    {
+      "id": "MIS_Exp02_MQ02A",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_MQ/MIS_Exp02_MQ02/MIS_Exp02_MQ02A/MIS_Exp02_MQ02A",
+      "questExportSHA256": "c4835050b49f68ede4c23e9112f73663a4e56cdb416a765b3c875ea212182ac2",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion02/BalancingData/Rewards/DA_RewardSetData_Exp02_MQ02A",
+      "exportSHA256": "96af519fc4dcbb06dc6dce093edba9ed2193df7f3408b5ef4512602450ab39e2"
+    },
+    {
+      "id": "MIS_Exp02_MQ02B",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_MQ/MIS_Exp02_MQ02/MIS_Exp02_MQ02B/MIS_Exp02_MQ02B",
+      "questExportSHA256": "09a54c9212e389fd07b42c782db4580fe46b4ca5f693763efde4bb650adcf5c9",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion02/BalancingData/Rewards/DA_RewardSetData_Exp02_MQ02B",
+      "exportSHA256": "96af519fc4dcbb06dc6dce093edba9ed2193df7f3408b5ef4512602450ab39e2"
+    },
+    {
+      "id": "MIS_Exp02_MQ02E",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_MQ/MIS_Exp02_MQ02/MIS_Exp02_MQ02E/MIS_Exp02_MQ02E",
+      "questExportSHA256": "25f557e2fb01630b8a5f0868ea3445a0c3a4b386a4604dcac2e8124bd738bd15",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion02/BalancingData/Rewards/DA_RewardSetData_Exp02_MQ02E",
+      "exportSHA256": "96af519fc4dcbb06dc6dce093edba9ed2193df7f3408b5ef4512602450ab39e2"
+    },
+    {
+      "id": "MIS_Exp02_MQ02F",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_MQ/MIS_Exp02_MQ02/MIS_Exp02_MQ02F/MIS_Exp02_MQ02F",
+      "questExportSHA256": "bbe6cd8b6bd9ac5c55372e7e31b39b5139c47a1f3d051778e816eba0d89f34af",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion02/BalancingData/Rewards/DA_RewardSetData_Exp02_MQ02F",
+      "exportSHA256": "96af519fc4dcbb06dc6dce093edba9ed2193df7f3408b5ef4512602450ab39e2"
+    },
+    {
+      "id": "MIS_Exp02_MQ02I",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_MQ/MIS_Exp02_MQ02/MIS_Exp02_MQ02I/MIS_Exp02_MQ02I",
+      "questExportSHA256": "7e8b4c0e2f25962d6ae1ea60d6e016c8e3cdcca8fb7b1ee4f711f3e3e4232ce5",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion02/BalancingData/Rewards/DA_RewardSetData_Exp02_MQ02I",
+      "exportSHA256": "96af519fc4dcbb06dc6dce093edba9ed2193df7f3408b5ef4512602450ab39e2"
+    },
+    {
+      "id": "MIS_Exp02_MQ03C",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_MQ/MIS_Exp02_MQ03/MIS_Exp02_MQ03C/MIS_Exp02_MQ03C",
+      "questExportSHA256": "cfc1b9bb767bc5f3d09f9b106c95b6d90602c0bec16b01fb8d567c431fba8500",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion02/BalancingData/Rewards/DA_RewardSetData_Exp02_MQ03C",
+      "exportSHA256": "96af519fc4dcbb06dc6dce093edba9ed2193df7f3408b5ef4512602450ab39e2"
+    },
+    {
+      "id": "MIS_Exp02_MQ03D",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_MQ/MIS_Exp02_MQ03/MIS_Exp02_MQ03D/MIS_Exp02_MQ03D",
+      "questExportSHA256": "66e89bc1419c146a04b2e6fa3684e6f082ee643c0f6bf4489812055e8e888090",
+      "xp": 1500,
+      "cash": 0,
+      "other": [
+        "BP_IndividualGameReward_Loot_C",
+        "BP_IndividualGameReward_Loot_C"
+      ],
+      "rewardPath": "/Game/DI2/Expansion02/BalancingData/Rewards/DA_RewardSetData_Exp02_MQ03D",
+      "exportSHA256": "f64ba7fa47ddeb16608415684a6762594900a28698376d31baf86de0406fc487"
+    },
+    {
+      "id": "MIS_EXP02_SQC02",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_SQ/MIS_EXP02_SQC02/MIS_EXP02_SQC02",
+      "questExportSHA256": "4bc392b7229ee5971c639016572a67db50b4ca96dfc44d0180a2f3956f74f213",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion02/BalancingData/Rewards/DA_RewardSetData_Exp02_SQC02",
+      "exportSHA256": "0420c12d215d6a44571628012e0322d7dd4694168d35603d63d6e4f3515841db"
+    },
+    {
+      "id": "MIS_EXP02_THC01_PARTA",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_THC01/MIS_EXP02_THC01_PARTA",
+      "questExportSHA256": "c041964a172ccad188788638915602973a1784caf8caa43fca2588e5f03e670e",
+      "xp": 1000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion02/BalancingData/Rewards/DA_RewardSetData_Exp02_THC01A",
+      "exportSHA256": "57e88a3c8ae628d004aeff4135185bc0d82923faa5e4b8a9172bad30cb4d1400"
+    },
+    {
+      "id": "MIS_EXP02_THC01_PARTB",
+      "questPath": "/Game/DI2/Expansion02/Mission/MIS_Exp02/MIS_Exp02_THC01/MIS_EXP02_THC01_PARTB",
+      "questExportSHA256": "f80fce9f8c29eeddaae16cf4ac6cbc9549e8582d8746125614e3a67d44a1a0d4",
+      "xp": 1000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion02/BalancingData/Rewards/DA_RewardSetData_Exp02_THC01B",
+      "exportSHA256": "57e88a3c8ae628d004aeff4135185bc0d82923faa5e4b8a9172bad30cb4d1400"
+    },
+    {
+      "id": "MIS_Haus_EndGame",
+      "questPath": "/Game/DI2/Expansion01/Mission/MIS_Haus/EndGame/MIS_Haus_EndGame",
+      "questExportSHA256": "ca54e947a7b23e81514bc165d00407cc03c0fb8439ea4fb8ff199476450df0c1",
+      "xp": 0,
+      "cash": 0,
+      "other": [],
+      "rewardPath": null,
+      "exportSHA256": null
+    },
+    {
+      "id": "MIS_Main01",
+      "questPath": "/Game/DI2/Missions/MIS_Prologue/MIS_Main01/MIS_Main01",
+      "questExportSHA256": "efba0bd259fda06b6a217bb8ff10931076f6fa680c27014e69f7f4a972605536",
+      "xp": 0,
+      "cash": 0,
+      "other": [],
+      "rewardPath": null,
+      "exportSHA256": null
+    },
+    {
+      "id": "MIS_MAIN02",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main02/MIS_MAIN02",
+      "questExportSHA256": "35a524c721ad9ee328cd837ace08f200776be7698ee61bdb86b336b6ae2c6706",
+      "xp": 2500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/BelAir/DA_RewardSetData_Main_Mansions_MQ02",
+      "exportSHA256": "4fd0ada9e818e49bdb7fc3d1e4bdf949d1b651f40f9d111f81d8c2c5fe1553fe"
+    },
+    {
+      "id": "MIS_MAIN03",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main03/MIS_MAIN03",
+      "questExportSHA256": "70ea13f644585b089512e3e36245278300e138b6c5d40732fe1789fb7b771dfc",
+      "xp": 2500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/BelAir/DA_RewardSetData_Main_Mansions_MQ03",
+      "exportSHA256": "4fd0ada9e818e49bdb7fc3d1e4bdf949d1b651f40f9d111f81d8c2c5fe1553fe"
+    },
+    {
+      "id": "MIS_MAIN04",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main04/MIS_MAIN04",
+      "questExportSHA256": "a04a236d6678fadfb97a6aea5abd4c8e646ac2c3930fc46172e7a86edbd52cd4",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/HalperinHotel/DA_RewardSetData_Main_Hotel_MQ04",
+      "exportSHA256": "3135d2ecb07d3d4efe90ab7d8654a3f4f6f943ebb590f737b004308b9cb934d9"
+    },
+    {
+      "id": "MIS_Main05",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main05/MIS_Main05",
+      "questExportSHA256": "d80084198fee0c892648c872eb0317ad30a9c9993280cbb9a5ae28075666a921",
+      "xp": 4000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Filmset/DA_RewardSetData_Main_Filmset_MQ05",
+      "exportSHA256": "2f2e4dbe7a69369180031c4bdfd02712ce980e1fab1b93251cc94e66c99cff9a"
+    },
+    {
+      "id": "MIS_Main05_01",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main05/MIS_Main05_01/MIS_Main05_01",
+      "questExportSHA256": "3442b8845852b590e7783f89dfe417781bc0dc3215f2d893c736016bcc89ebe4",
+      "xp": 2000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Main_Bev_MQ05_01",
+      "exportSHA256": "8c097e3bd0651096eecafccbd43eabd0f8091f747ca04a2e5c002949af5a6608"
+    },
+    {
+      "id": "MIS_Main05_02",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main05/MIS_Main05_02/MIS_Main05_02",
+      "questExportSHA256": "a3d391134644c68d909303785a054f162efc626e6bd117230a6b0aabab214c07",
+      "xp": 2000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Main_Bev_MQ05_02",
+      "exportSHA256": "d6056c08c31bac325070e0ddd4ab032e0f511497aa2d907408394abfa067feb1"
+    },
+    {
+      "id": "MIS_MAIN06",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main06/MIS_MAIN06",
+      "questExportSHA256": "8b4bf0899b9d89049374e402a8b5104da440e61d4acdb33eadcdf940f19617e9",
+      "xp": 6000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Entitlement"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Main_Bev_MQ06",
+      "exportSHA256": "954686c7304fbff0bb6663d05a7bb0edb118866448fac34b9d8281864f46be66"
+    },
+    {
+      "id": "MIS_MAIN06B",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main06/MIS_MAIN06B/MIS_MAIN06B",
+      "questExportSHA256": "ff04955ad7e175db88bfafe70fffed38456f3cc3bbc8783abd802f7546db45b5",
+      "xp": 4000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Main_Bev_MQ06b",
+      "exportSHA256": "c9949aba2c0bd29203358715fe4fdbd22fc9b01d47ec15f6f94887c7a1fee396"
+    },
+    {
+      "id": "MIS_MAIN08",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main08/MIS_MAIN08",
+      "questExportSHA256": "451d7390c1021d7931c5a22561a8796828d2c2802fd7054145134cbf02bab8dd",
+      "xp": 3000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/BelAir/DA_RewardSetData_Main_Sewers_MQ08",
+      "exportSHA256": "500bdc377e88e2c853a911be6459fd838f4ee167728f9719422fd0bdd796b63f"
+    },
+    {
+      "id": "MIS_MAIN08_Gauntlet",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Main08/Gauntlet/MIS_MAIN08_Gauntlet",
+      "questExportSHA256": "80ff8628c2ebf78e0a9c156e7c7dab495492d9b89dbd8562b2d179e4a8d8caf1",
+      "xp": 4000,
+      "cash": 500,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_Main_Venice_MQ08_Gauntlet",
+      "exportSHA256": "ca46e6105ab27204dfa94d1cc696ef0bd8b6c032fc46fe99b0d170b245aa1f2e"
+    },
+    {
+      "id": "MIS_MAIN08_LegDay",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Main08/LegDay/MIS_MAIN08_LegDay",
+      "questExportSHA256": "545c9f6db2e3f3bb1256cd4d1ff535b1a05454364bc5fe028df35f1605422859",
+      "xp": 5500,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Entitlement"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_Main_Venice_MQ08_LegDay",
+      "exportSHA256": "b6af356c55fa1c5b844e133060aef691c042b261820d143acff4e974262711e1"
+    },
+    {
+      "id": "MIS_MAIN08_Offensive",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Main08/Offensive/MIS_MAIN08_Offensive",
+      "questExportSHA256": "1ff7585499ee1eab5d524c6d4b32d7b5c18239e3df229644846bdbed0f461e5f",
+      "xp": 5500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_Main_Venice_MQ08_BeachOffensive",
+      "exportSHA256": "86a3d0784be52c373e72d064025546b4922e23a0d17daef743b99a8c8177d693"
+    },
+    {
+      "id": "MIS_MAIN08_Surfside",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Main08/Surfside/MIS_MAIN08_Surfside",
+      "questExportSHA256": "1066dd8a02815defceea1268d5b2930b09f14945e3f83d8016e2c57119d112ea",
+      "xp": 5000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_Main_Beach_MQ08_Surfside",
+      "exportSHA256": "6120cc28db19b3a07d26320e62f2a800d0d0b25fdaad49b8245c90cc283f8974"
+    },
+    {
+      "id": "MIS_MAIN08B",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main08/MIS_MAIN08B/MIS_MAIN08B",
+      "questExportSHA256": "64ab13a3da7f45da4c099a77e0dc9cc360632050e22226a94f5bf05856fcbc15",
+      "xp": 3000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/BelAir/DA_RewardSetData_Main_Sewers_MQ08b",
+      "exportSHA256": "c17684ef5f903513ee18c9bd76e086f85a3cf152b761057e9b6bc8d0bb7e9af6"
+    },
+    {
+      "id": "MIS_MAIN09",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Main09/MIS_MAIN09",
+      "questExportSHA256": "ea5bf513de72734612c01ada43d12b0f9bb8d2cd0dc5f50f38f5b0ecbf3f1c9b",
+      "xp": 5000,
+      "cash": 500,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Pier/DA_RewardSetData_Main_Venice_MQ09",
+      "exportSHA256": "d0be87db4c7432d6849a0bdf699b5237fbf8b18208db03ad159a15afdca0fcdd"
+    },
+    {
+      "id": "MIS_MAIN09_AirCon",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Main09/Hub/MIS_MAIN09_AirCon/MIS_MAIN09_AirCon",
+      "questExportSHA256": "2b35a96fbcdf792bdfa1fce1f62d994f35c146fbfe63fcd98dfb36b063963f2e",
+      "xp": 4000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_Main_Venice_MQ09_Aircon",
+      "exportSHA256": "6fa25f77019026f142d94c3175ec95a25c57b3a2556c7e529e4c5b3c973edf46"
+    },
+    {
+      "id": "MIS_MAIN09_Pier",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Main09/MIS_MAIN09_Pier",
+      "questExportSHA256": "737c214179d692960bea74be6f1b106c5171757e9b03563fbf419812c4558328",
+      "xp": 6500,
+      "cash": 2500,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Pier/DA_RewardSetData_Main_Venice_MQ09_Pier",
+      "exportSHA256": "e506c0c54303972308be4eb57dd8f52864747d1258d20d305fab9104063bb556"
+    },
+    {
+      "id": "MIS_MAIN10",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Main10/MIS_MAIN10",
+      "questExportSHA256": "77bd3e986d52c3e39a4faed8ed510f4976b39a49e057adaa524804596d141a6f",
+      "xp": 7000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_Main_Venice_MQ010",
+      "exportSHA256": "72c6f1f691876830293059dcdbed3cef0ea0bf4492f85a65f02cbfa1aab81543"
+    },
+    {
+      "id": "MIS_MAIN15",
+      "questPath": "/Game/DI2/Missions/MIS_HollywoodBlvd/MIS_Main15/MIS_MAIN15",
+      "questExportSHA256": "52ffcebcc6d90d2ce2947c40d21e2a24fc326a1b578cc120b48c71b51d6e4438",
+      "xp": 7500,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Metro/DA_RewardSetData_Main15_Metro",
+      "exportSHA256": "608f20c7d25ae2fce391c6c344ad279fd75399bc8efb14c135b46cd5854bf558"
+    },
+    {
+      "id": "MIS_MAIN16",
+      "questPath": "/Game/DI2/Missions/MIS_HollywoodBlvd/MIS_Main16/MIS_MAIN16",
+      "questExportSHA256": "83e8f6261721b2c4fe3ff9a4169f8615c7bb10ae7748dcef0997575e1d65da6d",
+      "xp": 8000,
+      "cash": 0,
+      "other": [
+        "BP_IndividualGameReward_Loot_C"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hollywood/DA_RewardSetData_Main_Hollywood_MQ016_Geopharm",
+      "exportSHA256": "496b7129b96c18ddb8d6950eb4e9e1d395158186e42139ed048c43802e346887"
+    },
+    {
+      "id": "MIS_MAIN18",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main18/MIS_MAIN18",
+      "questExportSHA256": "e78731e42a93355ee60b65e5a0370ac914402dc31d3c954d3c3aee782ead04a2",
+      "xp": 7500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_Main_Venice_MQ018",
+      "exportSHA256": "28e6167ffaba9ab78b3502a50d39a999da6c96fc2d9a90d47349843e53477b7d"
+    },
+    {
+      "id": "MIS_Main4a",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main04/MIS_Main4a/MIS_Main4a",
+      "questExportSHA256": "b2f16b74a657f3a64288b1b785e864f18fe8f73da4fc8550d82ca32b64e58ea2",
+      "xp": 3000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/HalperinHotel/DA_RewardSetData_Main_Hotel_MQ04a",
+      "exportSHA256": "0a8b27ca9d7df069ff03657769cba07852fa6b3c6dcfdd58ca61fb2ae4f92293"
+    },
+    {
+      "id": "MIS_Main4b",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Main04/MIS_Main4b/MIS_Main4b",
+      "questExportSHA256": "27b3a28ef4970632b1bdde58b6b4bf9d3d7a4fec9c9eb8084c3750683feb2332",
+      "xp": 2500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/HalperinHotel/DA_RewardSetData_Main_Hotel_MQ04b",
+      "exportSHA256": "570b69f0daecba911aa28fcae85fbf5d612cf6f108dcf14d06b24197c13ad50b"
+    },
+    {
+      "id": "MIS_Popcorn_Beach_MP601",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Popcorn_Beach/MIS_Popcorn_Beach_MP601/MIS_Popcorn_Beach_MP601",
+      "questExportSHA256": "b2fd9dab4b4b10c3c59f0ee147015f26cac7cdad3cd76b62b1557ec940b15311",
+      "xp": 2000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_MissingPerson_Beach_MP601",
+      "exportSHA256": "2afe9d1cbec97737a0784324583e7a45ee9c81972b3132e1a768ed5134b9b9cf"
+    },
+    {
+      "id": "MIS_Popcorn_Beach_MP604",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Popcorn_Beach/MIS_Popcorn_Beach_MP604/MIS_Popcorn_Beach_MP604",
+      "questExportSHA256": "d5200b6a2a83f96e4a68bbbc345a0883b84c6c1e84f44b12b83508cfaf89e530",
+      "xp": 2000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_MissingPerson_Beach_MP604",
+      "exportSHA256": "a58c2d26a9390c296e525fede0f3bac8418961a3df4ad297cb4c93b1d0f43715"
+    },
+    {
+      "id": "MIS_POPCORN_BEACH_TH601",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Popcorn_Beach_TreasureHunt01/MIS_POPCORN_BEACH_TH601",
+      "questExportSHA256": "bcc510ba77b396cf28cafe150b6055b22d57442d78db6b75a13b4c856153b7b2",
+      "xp": 2000,
+      "cash": 0,
+      "other": [
+        "BP_IndividualGameReward_TreasureHuntReward_C"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_TreasureHunt_Beach_TH601",
+      "exportSHA256": "127b5bc8ccf0e3703f8f0c431488a69ee2852f0a0bc9107f0ce6af80fd8967df"
+    },
+    {
+      "id": "MIS_POPCORN_BEACH_TREASUREHUNT02",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Popcorn_Beach_TreasureHunt02/MIS_POPCORN_BEACH_TREASUREHUNT02",
+      "questExportSHA256": "fe3f7a09c3519998113c34398b77926afc90b75fa773e395003b4655c0158a05",
+      "xp": 2000,
+      "cash": 0,
+      "other": [
+        "BP_IndividualGameReward_TreasureHuntReward_C"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_TreasureHunt_Beach_TH602",
+      "exportSHA256": "127b5bc8ccf0e3703f8f0c431488a69ee2852f0a0bc9107f0ce6af80fd8967df"
+    },
+    {
+      "id": "MIS_Popcorn_Hills_MP301",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Popcorn_Hills/MIS_Popcorn_Hills_MP301/MIS_Popcorn_Hills_MP301",
+      "questExportSHA256": "df0654306c541bfcd8dcca1e143d0aaa14e444f491a282666cfd166c43d1af08",
+      "xp": 2500,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_MissingPerson_Hills_MP301",
+      "exportSHA256": "ff830dd3bcfafea69b59108d9ea2e76fc276c83afd67800d3fdf205359ecc7f6"
+    },
+    {
+      "id": "MIS_Popcorn_Hills_TH303",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Popcorn_Hills/MIS_Popcorn_Hills_TH303/MIS_Popcorn_Hills_TH303",
+      "questExportSHA256": "afa9935688c8ea7fe24b575d390730040fc1b22066df5381f9bf0036853299fd",
+      "xp": 2000,
+      "cash": 0,
+      "other": [
+        "BP_IndividualGameReward_TreasureHuntReward_C"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_TreasureHunt_Hills_TH303",
+      "exportSHA256": "127b5bc8ccf0e3703f8f0c431488a69ee2852f0a0bc9107f0ce6af80fd8967df"
+    },
+    {
+      "id": "MIS_Popcorn_HollywoodBlvd_MPA01",
+      "questPath": "/Game/DI2/Missions/MIS_HollywoodBlvd/MIS_Popcorn_HollywoodBlvd/MIS_Popcorn_HollywoodBlvd_MPA01/MIS_Popcorn_HollywoodBlvd_MPA01",
+      "questExportSHA256": "a2ccb078385f75a686d4ac53abe8b5a8249a0e3cd4bbfc985b7c3b605a7cfa20",
+      "xp": 2500,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Entitlement"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hollywood/DA_RewardSetData_MissingPerson_Hollywood_MPA01",
+      "exportSHA256": "b2a0e0519599dbd4b8a3762d8d947c9beaf90f46d332807a6a7b9fd2eb2082dd"
+    },
+    {
+      "id": "MIS_Popcorn_Hotel_MP201",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Popcorn_Hotel/MIS_Popcorn_Hotel_MP201/MIS_Popcorn_Hotel_MP201",
+      "questExportSHA256": "b34316367013c3eabfad9166419d082be2b6d1c28b46ffb9e7dd1bb45befffff",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/HalperinHotel/DA_RewardSetData_MissingPerson_Hotel_MP201",
+      "exportSHA256": "96af519fc4dcbb06dc6dce093edba9ed2193df7f3408b5ef4512602450ab39e2"
+    },
+    {
+      "id": "MIS_Popcorn_Mansions_TH103",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Popcorn_Mansions/MIS_Popcorn_Mansions_TH103/MIS_Popcorn_Mansions_TH103",
+      "questExportSHA256": "7f738b264fd3515781fccc4538b25d619f5a0f1322c1ffbc6c94a75cf4c384b9",
+      "xp": 2000,
+      "cash": 0,
+      "other": [
+        "BP_IndividualGameReward_TreasureHuntReward_C"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/BelAir/DA_RewardSetData_TreasureHunt_Mansions_TH103",
+      "exportSHA256": "c6b93b28703adbc6f13577edc0f26359be3dfe5b4f17dffcf3c50b49e032dcbd"
+    },
+    {
+      "id": "MIS_Popcorn_Metro_MP901",
+      "questPath": "/Game/DI2/Missions/MIS_HollywoodBlvd/MIS_Popcorn_Metro/MIS_Popcorn_Metro_MP901/MIS_Popcorn_Metro_MP901",
+      "questExportSHA256": "a6e31899bfb32666fa40013de83ba443d727ec9f61819866950ccbbd027aec7b",
+      "xp": 2500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Metro/DA_RewardSetData_MissingPerson_Metro_MO901",
+      "exportSHA256": "6395dc056c89915ce1506e4afc7f0eebe1c34acf5aced2e301f64db3fbafece3"
+    },
+    {
+      "id": "MIS_POPCORN_MISSINGPERSON02",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Popcorn_MissingPerson02/MIS_POPCORN_MISSINGPERSON02",
+      "questExportSHA256": "994c03b7af83a9ec07be024a0c2a075c0f2ba8848e0de53ddd68d868e0309cc4",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_MissingPerson_Beach_MP602",
+      "exportSHA256": "96af519fc4dcbb06dc6dce093edba9ed2193df7f3408b5ef4512602450ab39e2"
+    },
+    {
+      "id": "MIS_POPCORN_MISSINGPERSON06",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Popcorn_MissingPerson06/MIS_POPCORN_MISSINGPERSON06",
+      "questExportSHA256": "bc133eaebe16bd31a66f73e315da6f8ab1541d3edefbd057260b0d6147a0b2c9",
+      "xp": 1500,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Pier/DA_RewardSetData_MissingPerson_Pier_MP801",
+      "exportSHA256": "7c8602363f59d36e41f40c29a212becdae7f582b5b3dd8d98fdffc542ac494a4"
+    },
+    {
+      "id": "MIS_Popcorn_OceanDrive_MP702",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Popcorn_OceanDrive/MIS_Popcorn_OceanDrive_MP702/MIS_Popcorn_OceanDrive_MP702",
+      "questExportSHA256": "4fe546b51532f581671e1dc1e6906b710c614ac3de44d97c533421a75987e705",
+      "xp": 2000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/OceanDrive/DA_RewardSetData_MissingPerson_OceanDrive_MP702",
+      "exportSHA256": "7e9c1ebed3f043fb34ed3d7997c770e3084822fed086f4c95cfe424c6e700810"
+    },
+    {
+      "id": "MIS_Popcorn_Pier_MP801",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Popcorn_Pier/MIS_Popcorn_Pier_MP801/MIS_Popcorn_Pier_MP801",
+      "questExportSHA256": "0e47738e90e8f67bd6f405c0e9e50f44aca392c163ff9135627dd71a2af49b28",
+      "xp": 0,
+      "cash": 0,
+      "other": [],
+      "rewardPath": null,
+      "exportSHA256": null
+    },
+    {
+      "id": "MIS_Popcorn_Pier_TH802",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Popcorn_Pier/MIS_Popcorn_Pier_TH802/MIS_Popcorn_Pier_TH802",
+      "questExportSHA256": "be20cec737e5ac7b289ece14a197422da3857242e4d9d2c0f9d11a2c704a394a",
+      "xp": 0,
+      "cash": 0,
+      "other": [],
+      "rewardPath": null,
+      "exportSHA256": null
+    },
+    {
+      "id": "MIS_POPCORN_TREASUERHUNT_802",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Popcorn_TreasureHunt_802/MIS_POPCORN_TREASUERHUNT_802",
+      "questExportSHA256": "d05a016cd9b84bcf82254541f9d37c734a82f55c05bb40269a713eb6633ae3e7",
+      "xp": 2000,
+      "cash": 0,
+      "other": [
+        "BP_IndividualGameReward_TreasureHuntReward_C",
+        "IndividualGameReward_Entitlement"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Pier/DA_RewardSetData_TreasureHunt_Pier_TH802",
+      "exportSHA256": "ffda0ea1451c3825dd9dc9a12cdd592133ab878ab142db37ce971610f10b0494"
+    },
+    {
+      "id": "MIS_POPCORN_TREASUREHUNT_702",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Popcorn_OceanDrive/MIS_Popcorn_OceanDrive_TH702/MIS_POPCORN_TREASUREHUNT_702",
+      "questExportSHA256": "c290928585616e685a8f50601705c12b8d14894f1d20bec6f35dec021aef5ef2",
+      "xp": 2000,
+      "cash": 0,
+      "other": [
+        "BP_IndividualGameReward_TreasureHuntReward_C"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/OceanDrive/DA_RewardSetData_TreasureHunt_OceanDrive_TH702",
+      "exportSHA256": "b18fdf40f524ee9a88b58da77eca58089fbbe076bf9bdc353567d7d43122f9af"
+    },
+    {
+      "id": "MIS_SIDE_BAYWATCHNIGHTS",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Side_BaywatchNights/MIS_SIDE_BAYWATCHNIGHTS",
+      "questExportSHA256": "89dc35a51f90efd9bad4199293b0dff8f7b1c88cf565fe6a956a1880e01c4df8",
+      "xp": 3000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Pier/DA_RewardSetData_Side_Pier_SQ049",
+      "exportSHA256": "42f25507a54e3af2a0f249bf80badb0386995c8ceb6e1861655d8ea32f25cc4e"
+    },
+    {
+      "id": "MIS_Side_Beach_SQ041",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Side_Beach/MIS_Side_Beach_SQ041/MIS_Side_Beach_SQ041",
+      "questExportSHA256": "02f2dd5b06e1b6063d87c909be708ab69c18cb5cb2f6a1f25b6936d143ca08ce",
+      "xp": 3500,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_Side_Beach_SQ041",
+      "exportSHA256": "601f6118ce034789eca4e3a20a664dcf154809c1869695cf300e627a1ad81fa6"
+    },
+    {
+      "id": "MIS_Side_Beach_SQ139",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Side_Beach/MIS_Side_Beach_SQ139/MIS_Side_Beach_SQ139",
+      "questExportSHA256": "492f601b6cc7249130560c138c14eb960dfb9665bad3a3274f8df622ff2b4059",
+      "xp": 4000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_Side_Beach_SQ139",
+      "exportSHA256": "99bb842ac89a52187f61010511c89edef91a48abb046432e2d119f6391b9d70c"
+    },
+    {
+      "id": "MIS_Side_Beach_SQ140",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Side_Beach/MIS_Side_Beach_SQ140/MIS_Side_Beach_SQ140",
+      "questExportSHA256": "f514c89fa598be857d6e01417a30b613c6931129cbd68418208c93869b4c26cb",
+      "xp": 3000,
+      "cash": 500,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_Side_Beach_SQ140",
+      "exportSHA256": "b68864ca26c517ae10963f7301f47802b40c67b8867b36114ecf8f01d69e08c2"
+    },
+    {
+      "id": "MIS_SIDE_COASTGUARD",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Side_CoastGuard/MIS_SIDE_COASTGUARD",
+      "questExportSHA256": "aa531252422455107813b75e7ada98774520346ebb9f1f12c2d19716dd9a8607",
+      "xp": 3000,
+      "cash": 300,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_Side_Beach_Coastguard",
+      "exportSHA256": "6a60669c6ebbddf62de2c5526c6414f86fb0e11d03020d2a32232f376ed9fdd6"
+    },
+    {
+      "id": "MIS_SIDE_Disposal",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Main08/Disposal/MIS_SIDE_Disposal",
+      "questExportSHA256": "50e0d8a2ce6b4ab50556447713b5d69034e404dd10718b4b024ba4de04df6b73",
+      "xp": 3000,
+      "cash": 500,
+      "other": [
+        "IndividualGameReward_Entitlement"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/SantaMonica/DA_RewardSetData_Side_Beach_SQ137",
+      "exportSHA256": "29e39c6241faca8e9d5bb6d2af8e1067c39eb2d70a32a369728993dfe3f85c4a"
+    },
+    {
+      "id": "MIS_Side_Filmset_SQ065",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Filmset/MIS_Side_Filmset_SQ065/MIS_Side_Filmset_SQ065",
+      "questExportSHA256": "ed15102529e16bf17f48a4e8784e2bea43793a41d4c01e65fa4f345af9104add",
+      "xp": 3000,
+      "cash": 0,
+      "other": [
+        "BP_IndividualGameReward_Item_C"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Filmset/DA_RewardSetData_Side_Filmset_SQ065",
+      "exportSHA256": "7a52bd449a3d26ec437a77dee7e0d5da9af603ae6f813c7df6750334de0cf9b4"
+    },
+    {
+      "id": "MIS_Side_Filmset_SQ080",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Filmset/MIS_Side_Filmset_SQ080/MIS_Side_Filmset_SQ080",
+      "questExportSHA256": "e6f8f382663f7e0fc62b59d3bc76be6e0e9c378650ee0f3853eddf24251b963d",
+      "xp": 3000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Filmset/DA_RewardSetData_Side_Filmset_SQ080",
+      "exportSHA256": "bccadb37eb850c192eab683eec9c486d984f25f2a016977edf77eef4425f4154"
+    },
+    {
+      "id": "MIS_Side_Filmset_SQ086",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Filmset/MIS_Side_Filmset_SQ086/MIS_Side_Filmset_SQ086",
+      "questExportSHA256": "1a441d598abbc4eeeabc71906b9fe5653977d2d15d854ca377cba89e06a1ac80",
+      "xp": 3000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Filmset/DA_RewardSetData_Side_Filmset_SQ086",
+      "exportSHA256": "8fbfb1a85d2b8e16f733c321023895cea7abde3d5d485f83dd2191b326bbb936"
+    },
+    {
+      "id": "MIS_SIDE_Haus_PH_MPB01_PART01",
+      "questPath": "/Game/DI2/Expansion01/Mission/MIS_Haus/Tertiary/EXP_MP01/MIS_SIDE_Haus_PH_MPB01_PART01",
+      "questExportSHA256": "9b50a7ebf52d0c198828ffabd1f7829f6bea46837abaf381bd95af0d9fb521bd",
+      "xp": 500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion01/BalancingData/Rewards/DA_RewardSetData_Exp1_MP01_Part1",
+      "exportSHA256": "39ce9b5b757a581929ca7a8cca537b2bb3eade9e45a62fb2bca39e9a3448ef15"
+    },
+    {
+      "id": "MIS_SIDE_Haus_PH_MPB01_PART02",
+      "questPath": "/Game/DI2/Expansion01/Mission/MIS_Haus/Tertiary/EXP_MP01/MIS_SIDE_Haus_PH_MPB01_PART02",
+      "questExportSHA256": "56a01f5df495882d182a5196b1e4516cb316363d7d360704a6e29d6fd3da4f6f",
+      "xp": 2000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion01/BalancingData/Rewards/DA_RewardSetData_Exp1_MP01",
+      "exportSHA256": "2afe9d1cbec97737a0784324583e7a45ee9c81972b3132e1a768ed5134b9b9cf"
+    },
+    {
+      "id": "MIS_SIDE_Haus_PH_TH01",
+      "questPath": "/Game/DI2/Expansion01/Mission/MIS_Haus/Tertiary/EXP_TH01/MIS_SIDE_Haus_PH_TH01",
+      "questExportSHA256": "a1045fbd9846540408874bcd2dec39dfefaa1319541a298e2e0847db3fef7579",
+      "xp": 2000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/Expansion01/BalancingData/Rewards/DA_RewardSetData_Exp1_TH01",
+      "exportSHA256": "2afe9d1cbec97737a0784324583e7a45ee9c81972b3132e1a768ed5134b9b9cf"
+    },
+    {
+      "id": "MIS_Side_Hills_SQ073a",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Hills/MIS_Side_Hills_SQ073/MIS_Side_Hills_SQ073a/MIS_Side_Hills_SQ073a",
+      "questExportSHA256": "c4ded1abd37f4ad33e3a4a65d09c515fd0ee539d2d98380bd1360868eb60de84",
+      "xp": 1000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Side_Hills_SQ073a",
+      "exportSHA256": "944e66056d607cfa87af67812ae4fb1507e2a8f9520507845855a1a25fcf2b45"
+    },
+    {
+      "id": "MIS_Side_Hills_SQ073b",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Hills/MIS_Side_Hills_SQ073/MIS_Side_Hills_SQ073b/MIS_Side_Hills_SQ073b",
+      "questExportSHA256": "3a4d79ad91062cc14d04e9e87d78b922fe47aa5d585b857f884106b620fb16ae",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Side_Hills_SQ073b",
+      "exportSHA256": "9e089ffd6eff6a4aaa3903bf85a9db9789d54df95a09e8f175542dfaf28cdd96"
+    },
+    {
+      "id": "MIS_Side_Hills_SQ073c",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Hills/MIS_Side_Hills_SQ073/MIS_Side_Hills_SQ073c/MIS_Side_Hills_SQ073c",
+      "questExportSHA256": "c80a732e5c2bdc96b28cd83aca2a1ade5a3abbc35e9a83dc28c34a924ef18e6c",
+      "xp": 2000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Side_Hills_SQ073c",
+      "exportSHA256": "d8a7e1e4f623f2db07c65deb769fcc13913e37cdc7cc32c630205ecb687930c8"
+    },
+    {
+      "id": "MIS_Side_Hills_SQ073d",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Hills/MIS_Side_Hills_SQ073/MIS_Side_Hills_SQ073d/MIS_Side_Hills_SQ073d",
+      "questExportSHA256": "5bd072e07257d1f9f2996fa67ed68410d4075c737ee02ba41fbe330f5308c97b",
+      "xp": 2500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Side_Hills_SQ073d",
+      "exportSHA256": "95631e43f029032b2701dcc781cbdf46803b7fe30c5bdae55967b9bf030e2525"
+    },
+    {
+      "id": "MIS_Side_Hills_SQ073e",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Hills/MIS_Side_Hills_SQ073/MIS_Side_Hills_SQ073e/MIS_Side_Hills_SQ073e",
+      "questExportSHA256": "7eccc4cb51d8188184c2dd7ca4672b7d115e91b0668b19d5519057405331b3cb",
+      "xp": 3000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Side_Hills_SQ073e",
+      "exportSHA256": "30c3bbf16d649227bf8f34f6806c479a94f9c5d17686a37957b848786d7d0db2"
+    },
+    {
+      "id": "MIS_Side_Hills_SQ073f",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Hills/MIS_Side_Hills_SQ073/MIS_Side_Hills_SQ073f/MIS_Side_Hills_SQ073f",
+      "questExportSHA256": "245c665fe1fc4af4991c1581e83d5edde5379bdf66ff1b356c5fae4236b84aeb",
+      "xp": 4000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Side_Hills_SQ073f",
+      "exportSHA256": "08f402eddc3252949e23a3ce0db0e96380f9b19d1f78ea3feb4d342873f0f4c7"
+    },
+    {
+      "id": "MIS_Side_Hills_SQ073g",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Hills/MIS_Side_Hills_SQ073/MIS_Side_Hills_SQ073g/MIS_Side_Hills_SQ073g",
+      "questExportSHA256": "30b42abadf808e1f9d47bf14311d29309338ab05b93f6ee7587fb1c7a3651e44",
+      "xp": 1500,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Side_Hills_SQ073g",
+      "exportSHA256": "fe6ff05c718f06c132d693e69874579fd886ca41d65376413ff45fd52b58f6a9"
+    },
+    {
+      "id": "MIS_Side_Hills_SQ084",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Hills/MIS_Side_Hills_SQ084/MIS_Side_Hills_SQ084",
+      "questExportSHA256": "da3c832631da3e9af33eb0742d505f718c7398b21634589c248f8542990d3a32",
+      "xp": 2000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Side_Hills_SQ084",
+      "exportSHA256": "8dbd370200aaefa163e9070c62ff27eaec65283186a253534236e7f406c9ad77"
+    },
+    {
+      "id": "MIS_Side_Hills_SQ099",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Hills/MIS_Side_Hills_SQ099/MIS_Side_Hills_SQ099",
+      "questExportSHA256": "7799a25d7b675956a0b1726e4681bc6b134ac63156a5c1b7c0ad84bd636bc544",
+      "xp": 2000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Side_Hills_SQ099",
+      "exportSHA256": "5ed9324de165253a1e37837e5c703a3dcff95d721998943dd506b811c2ab1fdb"
+    },
+    {
+      "id": "MIS_Side_HollywoodBlvd_SQ077",
+      "questPath": "/Game/DI2/Missions/MIS_HollywoodBlvd/MIS_Side_HollywoodBlvd/MIS_Side_HollywoodBlvd_SQ077/MIS_Side_HollywoodBlvd_SQ077",
+      "questExportSHA256": "694e729389cc41957b37e2a215bcaa0f181a75fcb30f81d722fd8b52428db85f",
+      "xp": 6000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hollywood/DA_RewardSetData_Side_Hollywood_SQ077",
+      "exportSHA256": "e5ec4353371c28a0f1ff882fe5abd1c32417e36ac549531cbc2e06ec4d77b3b3"
+    },
+    {
+      "id": "MIS_Side_HollywoodBlvd_SQ098",
+      "questPath": "/Game/DI2/Missions/MIS_HollywoodBlvd/MIS_Side_HollywoodBlvd/MIS_Side_HollywoodBlvd_SQ098/MIS_Side_HollywoodBlvd_SQ098",
+      "questExportSHA256": "96c30a02725d9bda0b49289107a8f0b8fb87bd474bd3f2bbcc8b84a8af4dcad2",
+      "xp": 5500,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hollywood/DA_RewardSetData_Side_Hollywood_SQ098",
+      "exportSHA256": "30aa12025334a79898acbd434fb1064ad3f7fea2a13e50a140f81392e828d5a4"
+    },
+    {
+      "id": "MIS_Side_Hotel_SQ081",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Hotel/MIS_Side_Hotel_SQ081/MIS_Side_Hotel_SQ081",
+      "questExportSHA256": "1e7860a3b71a3a05e5a7b5b86a80237ea9b6fe7931e0fedc068a4ff2c4ba662b",
+      "xp": 2500,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Entitlement",
+        "BP_IndividualGameReward_Item_C"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/HalperinHotel/DA_RewardSetData_Side_Hotel_SQ081",
+      "exportSHA256": "5e0580f5e17e6ad42ae05675ae2527ea23984b38a96b073ff0d1cf31719a3de5"
+    },
+    {
+      "id": "MIS_Side_Mansions_SQ002",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Mansions/MIS_Side_Mansions_SQ002/MIS_Side_Mansions_SQ002",
+      "questExportSHA256": "70b776a35b58caa8d1a7d990817edbb1c197eeed8330294324d6e936c7af1525",
+      "xp": 3000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/BelAir/DA_RewardSetData_Side_Mansions_SQ002",
+      "exportSHA256": "f073bf8d3352b8fa4985d340e8ef3169d6672de268b43385924361c4d65d3213"
+    },
+    {
+      "id": "MIS_Side_Mansions_SQ015",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Mansions/MIS_Side_Mansions_SQ015/MIS_Side_Mansions_SQ015",
+      "questExportSHA256": "96d048b4836448a6afd99d0c1fc3105d3c8d794a76769eb8cdb90d3c3806e0b6",
+      "xp": 1000,
+      "cash": 0,
+      "other": [
+        "BP_IndividualGameReward_Loot_C"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/BelAir/DA_RewardSetData_Side_Mansions_SQ015",
+      "exportSHA256": "83923830bf8a1cb9c8874dcc6f46cb74f7acdc1d41699e0767bbe45b1c461465"
+    },
+    {
+      "id": "MIS_Side_Mansions_SQ016",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Mansions/MIS_Side_Mansions_SQ016/MIS_Side_Mansions_SQ016",
+      "questExportSHA256": "4e038cb6a2625756a750dac4e78755ca924162ab213d368955e0183bcd2ef925",
+      "xp": 1500,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/BelAir/DA_RewardSetData_Side_Mansions_SQ016",
+      "exportSHA256": "96af519fc4dcbb06dc6dce093edba9ed2193df7f3408b5ef4512602450ab39e2"
+    },
+    {
+      "id": "MIS_Side_MessageInABottle",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Side_MessageInABottle/MIS_Side_MessageInABottle",
+      "questExportSHA256": "2f1f17b94f7cf1872f17a9f4d646cc9dd7b4038ffde46728bf420a43ba7c72fc",
+      "xp": 3000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Pier/DA_RewardSetData_Side_Pier_SQ092",
+      "exportSHA256": "85b19e53ebf7609ebbc94acb84df659fa96c6c2201a865f57cd03266f00d0858"
+    },
+    {
+      "id": "MIS_Side_Metro_SQ060",
+      "questPath": "/Game/DI2/Missions/MIS_HollywoodBlvd/MIS_Side_Metro/MIS_Side_Metro_SQ060/MIS_Side_Metro_SQ060",
+      "questExportSHA256": "0ea36402b22712a736df5d08a01c948c739e7c8bca890ab3b84eb28a682f46e7",
+      "xp": 5000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Entitlement"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Metro/DA_RewardSetData_Side_Metro_SQ060",
+      "exportSHA256": "e7b24e18e0ff43aaab7f88011359559bea73d698fe1f4600cf7bacbb6e46b71f"
+    },
+    {
+      "id": "MIS_Side_OceanDrive_SQ032",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Side_OceanDrive/MIS_Side_OceanDrive_SQ032/MIS_Side_OceanDrive_SQ032",
+      "questExportSHA256": "f6a662e411eec724564eb9a084bd6291cec7add1634573c4baf2c989efddd23e",
+      "xp": 3000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/OceanDrive/DA_RewardSetData_Side_OceanDrive_SQ032",
+      "exportSHA256": "6f5d3b620d2991c8e5775e1916313ad14778ac58d61f5e05ea62fc2291eef870"
+    },
+    {
+      "id": "MIS_Side_OceanDrive_SQ061",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Side_OceanDrive/MIS_Side_OceanDrive_SQ061/MIS_Side_OceanDrive_SQ061",
+      "questExportSHA256": "bb9d6f7aa3a5560491aa7f9a3b90089a262dca1a2d34898b87c5fa99d1d140bc",
+      "xp": 4000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/OceanDrive/DA_RewardSetData_Side_OceanDrive_SQ061",
+      "exportSHA256": "e15f752ce58e8063738126df3842f0f4e00f63c7ed662751bb96897adfc66043"
+    },
+    {
+      "id": "MIS_Side_OceanDrive_SQ064",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Side_OceanDrive/MIS_Side_OceanDrive_SQ064/MIS_Side_OceanDrive_SQ064",
+      "questExportSHA256": "7c15c928416e58b97b322bfa99b59fb290ce646536dfaf45167b19437fa9a19b",
+      "xp": 3000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/OceanDrive/DA_RewardSetData_Side_OceanDrive_SQ064",
+      "exportSHA256": "ccf029d9e9e56d273b6dadae472d5fab7dd74ffe4368f79319ddc850f80ef488"
+    },
+    {
+      "id": "MIS_Side_Pier_SQ052",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Side_Pier/MIS_Side_Pier_SQ052/MIS_Side_Pier_SQ052",
+      "questExportSHA256": "6d7ee95a3633bae76a7217b1ebcb765992e1e0b46bfffc7fc6e641738df97186",
+      "xp": 4000,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot",
+        "IndividualGameReward_Entitlement"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Pier/DA_RewardSetData_Side_OceanDrive_SQ052",
+      "exportSHA256": "38fb4263e74d825a0040aded95bfce047906e142d48503ad93c8df3fa5c99dd5"
+    },
+    {
+      "id": "MIS_Side_Pier_SQ100",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Side_Pier/MIS_Side_Pier_SQ100/MIS_Side_Pier_SQ100",
+      "questExportSHA256": "ea7c5b1eccee3713cef8feac9764723445df59117ff0e009f072a15d234410bf",
+      "xp": 4500,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Entitlement"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hollywood/DA_RewardSetData_Side_Hollywood_SQ100",
+      "exportSHA256": "c879e5114d575044f968fc5b15601a2b61d3cd0470a717ad6b203b98ca1991b5"
+    },
+    {
+      "id": "MIS_Side_Sewer_SQ088",
+      "questPath": "/Game/DI2/Missions/MIS_Hills/MIS_Side_Sewer/MIS_Side_Sewer_SQ088/MIS_Side_Sewer_SQ088",
+      "questExportSHA256": "458eba0b96a9d51827bb6f3ad9da6acb18e0f7b66bb745a09036c6f68adfeb42",
+      "xp": 3500,
+      "cash": 0,
+      "other": [
+        "IndividualGameReward_Loot"
+      ],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Hills/DA_RewardSetData_Side_Sewers_SQ088",
+      "exportSHA256": "b7d517ac456ace2ca702b00ac88245ee12b3b1e1ba71ffa71fd984b34147e9cd"
+    },
+    {
+      "id": "MIS_SIDE_SQ094",
+      "questPath": "/Game/DI2/Missions/MIS_SantaMonica/MIS_Side_GP8029/MIS_SIDE_SQ094",
+      "questExportSHA256": "65af4377b1aff4c53eafbd3ea22c91b3cf6813bd573ecb9842d7119c3b74f4c4",
+      "xp": 3000,
+      "cash": 0,
+      "other": [],
+      "rewardPath": "/Game/DI2/BalancingData/Rewards/Pier/DA_RewardSetData_Side_Pier_SQ094",
+      "exportSHA256": "9f73959891f240fe45331c45717ecb6b73ceeb04b6fa571069d2e5ff04036b52"
+    }
+  ]
+}

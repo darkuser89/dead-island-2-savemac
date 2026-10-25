@@ -1,0 +1,29 @@
+name: Native macOS editor
+on:
+  push:
+    paths:
+      - 'macOS/**'
+      - 'DeadIsland2SaveMac.xcodeproj/**'
+      - 'project.yml'
+      - 'script/**'
+      - '.github/workflows/macos-swiftui.yml'
+  pull_request:
+    paths:
+      - 'macOS/**'
+      - 'DeadIsland2SaveMac.xcodeproj/**'
+      - 'project.yml'
+      - 'script/**'
+      - '.github/workflows/macos-swiftui.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-editor:
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Build and test native editor
+        run: DI2_BUILD_DIR="$RUNNER_TEMP/DeadIsland2SaveMac" ./script/build_and_run.sh --test

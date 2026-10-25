@@ -1,0 +1,4 @@
+module NativeCodec {
+    header "NativeCodec.h"
+    export *
+}

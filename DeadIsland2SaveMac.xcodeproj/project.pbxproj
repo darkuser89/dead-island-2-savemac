@@ -1,0 +1,1456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01A19360C6B82733599C027E /* EditorStore+Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2274205100D614A661F494 /* EditorStore+Inventory.swift */; };
+		01A4B9E963212BD0DA47CABC /* GameSessionGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C26E2B3A9531B5B1A4F4C7C /* GameSessionGuard.swift */; };
+		02C6C103A76FC0A0C3E7000A /* zstd_cwksp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5839AC44A9302D16AE0BD146 /* zstd_cwksp.h */; };
+		04A35611819017AB2FFA35B6 /* clevels.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C178B4AB3787336121B856D6 /* clevels.h */; };
+		05102093DD3AAD91D072F5D6 /* zstd_ldm_geartab.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4240FD936D7F4FFA8808075F /* zstd_ldm_geartab.h */; };
+		080021A88A7720A0D6175493 /* CashEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB0F43BF2FD56AB47D74C0 /* CashEditor.swift */; };
+		09FCC9D7123B9BCF9F0506CB /* SaveCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B208513927560ABD042C430 /* SaveCore.framework */; };
+		0AF4C0727DC9275185B73541 /* fse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5FB949042D6A53FD680681D2 /* fse.h */; };
+		1018EA4C7358256556BCE28F /* city.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A64EA7C8AA4AF30B2C47AD6 /* city.cc */; };
+		106AD272D975D7E28E7B8B71 /* zstd_compress_superblock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC3FD4736708B5020398F99F /* zstd_compress_superblock.h */; };
+		12CF614C38E79566063210B5 /* huf.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 242D803FB8E467D7EA46D169 /* huf.h */; };
+		13EAB433B14FC5DB8B225DB9 /* SkillEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5216FE89E64AAF55717CF3 /* SkillEditor.swift */; };
+		14888F93DC83C9FD7328393A /* fse_decompress.c in Sources */ = {isa = PBXBuildFile; fileRef = 62708A468A504AED6DC84519 /* fse_decompress.c */; };
+		161748F380365B62B2B1514C /* zstdmt_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 8254335D89690C5A01607FAC /* zstdmt_compress.c */; };
+		184129F8CA38435AE0CE664B /* InventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13207FADFA4C23D310093FA5 /* InventoryTests.swift */; };
+		1BD787099CC16B26FA21A5C8 /* bitstream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 10BED9F15587ED9607ECA1AF /* bitstream.h */; };
+		1D670C8773496DFED70BD466 /* SaveCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B208513927560ABD042C430 /* SaveCore.framework */; };
+		1F47F3AEF3B2247107CC591D /* SaveDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D80C232154036C224C9B166 /* SaveDiscovery.swift */; };
+		201CB5369F089D7EFC316A49 /* zstd_double_fast.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 546643A0B0E2B7A940A5DEC7 /* zstd_double_fast.h */; };
+		21066CE81FD9BBC3F6069272 /* WorldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15483AB592A13724A8F4CA3 /* WorldState.swift */; };
+		2152A493894E22369BA13FCF /* WorldEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7039C73B1C7A8A32D98980 /* WorldEditorView.swift */; };
+		2A905C477A51F193AED900AF /* zstd_preSplit.c in Sources */ = {isa = PBXBuildFile; fileRef = A534719B5766706BF4D57B30 /* zstd_preSplit.c */; };
+		2D81BADE43321353EC1E4E55 /* CollectionCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE7F20BA25AC5F65A7A40D1 /* CollectionCatalog.swift */; };
+		33055D8713E2A69AECEA9ECD /* SaveBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5883A45DA1DDB6E227C497C5 /* SaveBackup.swift */; };
+		33E7BBCFBB0DE79C799C9F08 /* ItemCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2A542D5167B9918760FEEF /* ItemCatalogTests.swift */; };
+		34CD5DB7F84F88B65A6FB311 /* SkillState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38A4A0E1E6761FCBF242FCD /* SkillState.swift */; };
+		34D4DCE612F0997F33F2EA75 /* BinaryReaderBoundaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F39D7E132E76A9836804E7 /* BinaryReaderBoundaryTests.swift */; };
+		3611799A014D0B9D1C337AEC /* threading.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 279F651B9282E3E4BA33453B /* threading.h */; };
+		3771820257D9CE5DF3987296 /* UnrealProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40579A13F5C7C9C1DE51F66 /* UnrealProperty.swift */; };
+		3D5DDBCB80E3FD4175003C4C /* EditorCloseGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF444C56C1AC95EABD9802F /* EditorCloseGuard.swift */; };
+		42E243E29122ECFC16182FE2 /* zstd.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE1A70BC9E9F7A22A4DD4C3C /* zstd.h */; };
+		448736D871DD254A6398CA35 /* EditorStore+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093886B5C2B3C5D7CEE8CC5 /* EditorStore+Progress.swift */; };
+		45A4FD05EEEF766595FC0CA9 /* zstd_compress_literals.c in Sources */ = {isa = PBXBuildFile; fileRef = CE65BE05623B12400B653B6C /* zstd_compress_literals.c */; };
+		499CE6E4F267A609F58AC248 /* SaveField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AA064FA1652A7D7C61A801 /* SaveField.swift */; };
+		4AE80284E83A634B24F817DD /* zstd_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = 5888A25EFF34FAA56574DFAA /* zstd_fast.c */; };
+		4BD62C10CE7F6300A64BC1F8 /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5EB83443E81AA4DA20E5D /* CharacterInfo.swift */; };
+		4D8DE1D061112E1539A33C8E /* CollectionCatalog.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D15084AF01F06216060AD58 /* CollectionCatalog.json */; };
+		4DEE9905691391DBDEBE636B /* WeaponUpgrades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF066AC1274077530F823C /* WeaponUpgrades.swift */; };
+		5159123D21961C60B8709872 /* error_private.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 94C19CB57CE06AFCBFD0386D /* error_private.h */; };
+		51E8E65057103A49CF856CE0 /* EditHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AD225C39B5BFE18FD86B7 /* EditHistoryTests.swift */; };
+		523B7EC81B0A44472FC26D8A /* zstd_ddict.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7AF331F9BFE37522B73CA3C /* zstd_ddict.h */; };
+		52E998C1B97DB3CB095B9A4E /* zstd_decompress_block.c in Sources */ = {isa = PBXBuildFile; fileRef = 34466F21CEEBB18B5D0C6883 /* zstd_decompress_block.c */; };
+		54D6E63F2E2745EDF21056FC /* UpgradeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D5C3736CE5D6AC84224EBA /* UpgradeEditorView.swift */; };
+		56142D5A29CF183AA50BC340 /* fse_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = F32008C8E14D5272A01CD0B2 /* fse_compress.c */; };
+		5D0DAA71E29F146B7BF633FE /* zstd_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1F58849A045FB5E2E023D /* zstd_common.c */; };
+		5F4EC861B8C3F9907E5E57CE /* zstd_fast.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 999ACC59E0D96F1079CA0A50 /* zstd_fast.h */; };
+		61BA3C4D1A50CBF8ECB02110 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BA46334DA8C468FA68A9363E /* LICENSE */; };
+		6201C8619AB0015143CB2FA6 /* SaveContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58785FC4577E03663B102EE /* SaveContainer.swift */; };
+		652FCACEC35805B23BED0406 /* SaveCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B208513927560ABD042C430 /* SaveCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65318471D3AB7F7C3B56DA04 /* hist.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A171BBC9905CA86DD374B84 /* hist.h */; };
+		65C41B90AD4EEB2B676E941E /* zstdmt_compress.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9670CE1B5406F5A447BCAC05 /* zstdmt_compress.h */; };
+		6690D29F6C8F73D8A6D6A64C /* SaveCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B208513927560ABD042C430 /* SaveCore.framework */; };
+		6F312C94E7F99C73B90087E2 /* error_private.c in Sources */ = {isa = PBXBuildFile; fileRef = D02069AE307451161CA92C04 /* error_private.c */; };
+		6FA6111BF2DA21DE5F57E7A7 /* QuestRewards.json in Resources */ = {isa = PBXBuildFile; fileRef = 5005757750D1FE16E25B8FCC /* QuestRewards.json */; };
+		70288B71A3AE26279C038F3D /* CollectionCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D65776284ADFD75BC2890 /* CollectionCatalogTests.swift */; };
+		726B37B932AF64A9F172737D /* EditHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B746EE6F3F26970882808 /* EditHistory.swift */; };
+		7276B7E1B99911713FD2D0CB /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D4CA2F653665D06AC2F5A86 /* debug.c */; };
+		75ED4F219DB2782067B4B103 /* xxhash.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B2C53B14C6321C698FCA0F5E /* xxhash.h */; };
+		7967FB87F06B400555F9FE8E /* ThirdPartyNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5ECF8F81BEBA0ED2447CD97F /* ThirdPartyNotices.txt */; };
+		7BDA2B30536C4256D586A5B6 /* zstd_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 15B4231C5D8526D14917EA83 /* zstd_compress.c */; };
+		81D84A5EEB212E799ECDD458 /* zstd_lazy.c in Sources */ = {isa = PBXBuildFile; fileRef = CF8DF17BBA1C2A6D050A9CC1 /* zstd_lazy.c */; };
+		83453C81B86C7DE037125480 /* ItemCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF927776B5A0C36DECEA97B /* ItemCatalog.swift */; };
+		838F45F08BA5408F64D29632 /* CharacterInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3D0BCEC17D0949C0CE6DC /* CharacterInfoTests.swift */; };
+		83F8331865EDC3AB38CFAB5F /* QuestRewardCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BEAC6870AEA9AD6406E84 /* QuestRewardCatalog.swift */; };
+		84B593DCBD03C1645BA43642 /* threading.c in Sources */ = {isa = PBXBuildFile; fileRef = 3640C5903BA151CEB4FE98BC /* threading.c */; };
+		8537EE6A5A2ACD8FC183111A /* zstd_opt.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D039FEA4F5D1B84E74E08756 /* zstd_opt.h */; };
+		8836B70C0B595DBA7A3E822C /* SaveFileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038218CD81597B8006986444 /* SaveFileLoader.swift */; };
+		895D1F7E75C190B625FEBB02 /* zstd_trace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A5DF254AD9C72B4607D566C3 /* zstd_trace.h */; };
+		8A25B24BAC6E2B7132E05372 /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = D44BF4D88E6C2F9E371A3C8B /* module.modulemap */; };
+		8A313D6993BB555B4E4429F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4B571CF2B171CF34FC9C5F /* ContentView.swift */; };
+		8A3E99807D6463734FE5956E /* zstd_deps.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FF8B9F0FE3B4764634512421 /* zstd_deps.h */; };
+		8AFFB57A7242AD8267EA18C1 /* entropy_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B21EAAE41641C3925AFAFF8 /* entropy_common.c */; };
+		8BC3F7C00A23FEB695E08CFF /* SkillEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94714AF4F06AF36707CF493 /* SkillEditorView.swift */; };
+		8BDFA26A296B3AE05D59CFB0 /* ChosenSaveFolders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C076350C5757A295EF8D2B3F /* ChosenSaveFolders.swift */; };
+		8D477FD99B2F769AABB6CFCF /* portability_macros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6944DF078298CECADE17DF55 /* portability_macros.h */; };
+		8E39198AB5C43E3E10F76080 /* FieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA3FF4578BBD0B8A08FDE30 /* FieldRow.swift */; };
+		8E923068627F3AB659C67A10 /* zstd_lazy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EDE70D84A4368322BD56D29F /* zstd_lazy.h */; };
+		90636DC0F2504E7F927C49C3 /* EditorCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2952594CD732FAC1DA6E43 /* EditorCommands.swift */; };
+		90D989733526EEC55F07B95D /* EditorStore+Platforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30ACE563A75445BB88F2D60 /* EditorStore+Platforms.swift */; };
+		90EDE139CC189188FB0CBD02 /* EditorStore+Unlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1BFC6DFA9E936AF1DB847A /* EditorStore+Unlocks.swift */; };
+		9467336EFD36615CEA2D806C /* huf_decompress.c in Sources */ = {isa = PBXBuildFile; fileRef = 13153F18483E834BC35D1834 /* huf_decompress.c */; };
+		9467CE98CB1C66C434ED8C29 /* zstd_internal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3797CE3DFDF849BD827037C0 /* zstd_internal.h */; };
+		9616B8CC0AE7222C66EF62F1 /* cpu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A8A9BD8C5ED09E3EA5B127DB /* cpu.h */; };
+		965F13CAA0CAA18E0E1FC057 /* compiler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A21B4769DBD4FB33CD337C4 /* compiler.h */; };
+		971A8EA10B6482F529E56013 /* hist.c in Sources */ = {isa = PBXBuildFile; fileRef = 98352B5D09CC3CE728A37361 /* hist.c */; };
+		97F17F7628DB24679DE75FD6 /* SaveDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718F76C9CE7C7B81CA3B1858 /* SaveDocument.swift */; };
+		9B63B16E0015DDC36E07F22E /* EditorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FC22A56D4AA4943635BC51 /* EditorStore.swift */; };
+		9BE9AB2027AD6B4F76C7197E /* debug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CED90588D123DABEBE25AAAC /* debug.h */; };
+		9CDD76D1D815CFC00F88A39D /* zstd_decompress_internal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C685ED69590DE07AFAD9340B /* zstd_decompress_internal.h */; };
+		9D01AB0B0A69BB6EFAEE6F42 /* zstd_compress_internal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E91FBFC954E42099A8C0CEF8 /* zstd_compress_internal.h */; };
+		9D0AC4AF3E60DB5FE9CFD5C4 /* zstd_preSplit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 33C508A5A1C9CBABB7EDC3E2 /* zstd_preSplit.h */; };
+		A3443600B21D736607E8FD41 /* xxhash.c in Sources */ = {isa = PBXBuildFile; fileRef = AE57D81D984195642CCA6C6A /* xxhash.c */; };
+		A4BF102A02E07AAAFF84E137 /* QuestProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C9C65A8719BFDDC073A107 /* QuestProgressTests.swift */; };
+		A516CD31ED830BA2B2ED1A5D /* UnlockTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132E2FC5FC354783E33B7EFB /* UnlockTable.swift */; };
+		A6E6F17D7951F2AE146FA560 /* ScopedFileAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC530115155E9D85A31EBD /* ScopedFileAccess.swift */; };
+		A7961A5F49ABDCB4BF046C25 /* UnlockEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55DBAB140E1029556283EC /* UnlockEditorView.swift */; };
+		A9DFE71A348BEDAC9DE75549 /* zstd_ddict.c in Sources */ = {isa = PBXBuildFile; fileRef = 154CA75BB9F24A35EA00C4B0 /* zstd_ddict.c */; };
+		AB36D4572A8D2F3C754FBDBB /* InventoryCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F19980EDC8A6376142E83DA /* InventoryCollection.swift */; };
+		ABE214C27D9B6085F56AFBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682DB76466559D10FEFDFBBC /* Assets.xcassets */; };
+		AC2230CE810F35A7AD30A371 /* zstd_compress_superblock.c in Sources */ = {isa = PBXBuildFile; fileRef = 99046A497D0CC4BD4EF5F77C /* zstd_compress_superblock.c */; };
+		AD2F75B9995307D3EEC23DBD /* SaveCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B208513927560ABD042C430 /* SaveCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE6D11FC949FE43120CDF568 /* CompatibilityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA643D0642DF63D386D5AAB /* CompatibilityRequest.swift */; };
+		AF39025FDE42C2D49EA70A87 /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD386FBF18B4F1F5CEB50B57 /* BinaryReader.swift */; };
+		B00D0F434FA76695D6D2FB10 /* zstd_opt.c in Sources */ = {isa = PBXBuildFile; fileRef = 05BE9D808AEDBE0F003CAEA7 /* zstd_opt.c */; };
+		B019183AD3BA9BC1110C2AD7 /* NativeCodec.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E5CFE9DAD5BCE1F699F9DA4F /* NativeCodec.h */; };
+		B0EC62ABE5F7FCF801E45E43 /* TaggedRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41D1BAA71A6F3A37F71589 /* TaggedRecord.swift */; };
+		B374C646A0AD550585FB0187 /* QuestProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29D31821EA0AAB4F7F5BEF /* QuestProgress.swift */; };
+		B41AA704FA4E103F4CEFA740 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF58415A3CEA353F3144287 /* main.swift */; };
+		B4DE8AFC7FD02A3CB49896A6 /* FilePanels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A43F9FDFB191465F9E40725 /* FilePanels.swift */; };
+		B4E25FEDE013C3359805B636 /* EditorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1628A0EF7D5EB4B1C24598 /* EditorDetail.swift */; };
+		B6C3F596D2952F5B7057E11F /* SaveVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B09D536168DD8B818BC01 /* SaveVersionTests.swift */; };
+		B747514FAAC596E2AF29BEA9 /* huf_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CF99058137287230DBDB64D /* huf_compress.c */; };
+		B8B6A0BFECF70586BFF39417 /* zstd_ldm.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA34A6F06CF3B3B66280FB92 /* zstd_ldm.h */; };
+		BFB7317A7CA68CF64107C03A /* zstd_compress_literals.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BB14B2208B95C60C2862C7D /* zstd_compress_literals.h */; };
+		C0496FC7CC529958B016E281 /* QuestEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8EEA56CB5D4ED96738D8A9 /* QuestEditorView.swift */; };
+		C10172E67DF83A84F7334B0E /* SaveSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC1CA934F3839A1F255C75 /* SaveSidebar.swift */; };
+		C819F7BD8E95303AE0DDAE3E /* zstd_errors.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 891C425C71E7E4416C5EBE68 /* zstd_errors.h */; };
+		C980561B96ADAF756D594EAF /* EditorStore+History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3636DC095980E68FC1D17 /* EditorStore+History.swift */; };
+		CAFEC7077423BE38CB694291 /* DeadIsland2SaveMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F6AADA140544D33C62E6AD /* DeadIsland2SaveMacApp.swift */; };
+		CB754651294C94912F23BAC6 /* QuestRewardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE1C78CE0D1D62B1A8A4EA1 /* QuestRewardTests.swift */; };
+		CC64DC654540422DCD956521 /* pool.c in Sources */ = {isa = PBXBuildFile; fileRef = B345E09306C8059676FF1EF4 /* pool.c */; };
+		CE31BCEEE1CDD6DB89A4FB0E /* SaveBackupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69F5156378EF55D3C2F8F4 /* SaveBackupTests.swift */; };
+		D19F98AAE153D3FA5FC5435F /* SkillStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4CCECC3C1648F14E3F8B2 /* SkillStateTests.swift */; };
+		D20E82223B739BD989D914E1 /* UpgradeAndUnlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4F60705F756230B7102BC1 /* UpgradeAndUnlockTests.swift */; };
+		D2C5EDD3AFF0369CAFC3DDFE /* WorldStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96C0E9B9DE7B75F28E7210C /* WorldStateTests.swift */; };
+		D5189C954E3AE9CF40DEEC9E /* zstd_double_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = 592EE562353037921FA5ACB5 /* zstd_double_fast.c */; };
+		D828E9509916D76555E66B95 /* CollectionEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514F5206E3AC932E9835D85 /* CollectionEditorView.swift */; };
+		D9E27B869287D82A81A9F22D /* zstd_decompress_block.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 611ED30771567B1AA201ACB3 /* zstd_decompress_block.h */; };
+		DA2FB30EA6415E4864460403 /* zstd_compress_sequences.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3AF181460456368A9639EFC6 /* zstd_compress_sequences.h */; };
+		DD583C1BE859A98F031E8192 /* SaveCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248EB5393B7CBE5D72C2CE56 /* SaveCoreTests.swift */; };
+		DF969B9748D4A5A6D821BA6E /* CollectionManifestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F523D6781B16DC3B17829B22 /* CollectionManifestTests.swift */; };
+		E554242F602C2DED519D7F57 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1720B79CFECCB55366BD046 /* InventoryView.swift */; };
+		E648765DD8150D9CA71CE98E /* SaveSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC13AC59014F50D68B7A447 /* SaveSection.swift */; };
+		E81E892E882E4F0151742B22 /* zstd_compress_sequences.c in Sources */ = {isa = PBXBuildFile; fileRef = 8211843E6F3DF9B5AAD1BDBF /* zstd_compress_sequences.c */; };
+		E8FE1DBAB46C489C68D16CD2 /* InventoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A10352B41D5E38B2671003 /* InventoryFactory.swift */; };
+		E99025D2E0CDCC3C55346C30 /* zstd_ldm.c in Sources */ = {isa = PBXBuildFile; fileRef = 3337CB9DE37C8DE9160383F8 /* zstd_ldm.c */; };
+		EA6322B501D2243AC069A6E9 /* SaveFileLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515ABBE6B6B86365136E7F20 /* SaveFileLoaderTests.swift */; };
+		EB600030C142C5019B69D737 /* zstd_decompress.c in Sources */ = {isa = PBXBuildFile; fileRef = B84E3EBCFDA94407D86AF993 /* zstd_decompress.c */; };
+		EB6C291A11C40C4ECF66EDFA /* bits.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCC929D1D3B5A78D33F280C2 /* bits.h */; };
+		F1F3C07D3A8FF991ACC6FEBF /* allocations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F88CBB0E804D5924C31E0B9 /* allocations.h */; };
+		F2A8E6508799367DF0C627F2 /* pool.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E33CA30263CB9D5BE124A2AB /* pool.h */; };
+		F5AA53E686CEC02A19A0ADBB /* PendingChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59C144BAC613B2E84B05A04 /* PendingChanges.swift */; };
+		F6DC37D3C69103DA06229E00 /* city.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D385C23D8A5EBA467011FA8 /* city.h */; };
+		F8CD4FB366F99F6DD3185FA8 /* ItemCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC03DA2BD818DF4791108D12 /* ItemCreatorView.swift */; };
+		F9E09FC540D0ADD7192BF0EA /* mem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DABE6147707D53B9045FE176 /* mem.h */; };
+		FABBAD056C367AEA8C411F82 /* libNativeCodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C179925988A8A7A393986BA /* libNativeCodec.a */; };
+		FBE0D1AC742892DF5868FFD4 /* ProgressPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20661C043B7469E2C260CC6 /* ProgressPreview.swift */; };
+		FC9EF90311BFBF69B8192631 /* UnlockCatalog.json in Resources */ = {isa = PBXBuildFile; fileRef = 83B54B1EBC61555FF85EAC2C /* UnlockCatalog.json */; };
+		FD279E940F06AC16A51368F4 /* NativeCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 729DF5E5A4164E1A47D78FC7 /* NativeCodec.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F4F2AB869E8DA810E27622D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC45AB00C0AB1DB4EA9080D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACE895BC4648FD7597E8059B;
+			remoteInfo = NativeCodec;
+		};
+		1B6B457C9B786DC08A8BE287 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC45AB00C0AB1DB4EA9080D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0975BA0CC1A3431A0374755;
+			remoteInfo = SaveCore;
+		};
+		638BB0BED594ECF1363E788D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC45AB00C0AB1DB4EA9080D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0975BA0CC1A3431A0374755;
+			remoteInfo = SaveCore;
+		};
+		B1DB417C4D743BF1ACCEDF45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC45AB00C0AB1DB4EA9080D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0975BA0CC1A3431A0374755;
+			remoteInfo = SaveCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		174C4C1257F631C73AC96A13 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				652FCACEC35805B23BED0406 /* SaveCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5913D1967A0797C52ADC8058 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AD2F75B9995307D3EEC23DBD /* SaveCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69C815016B78D23101FB39CA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				B019183AD3BA9BC1110C2AD7 /* NativeCodec.h in CopyFiles */,
+				F1F3C07D3A8FF991ACC6FEBF /* allocations.h in CopyFiles */,
+				EB6C291A11C40C4ECF66EDFA /* bits.h in CopyFiles */,
+				1BD787099CC16B26FA21A5C8 /* bitstream.h in CopyFiles */,
+				F6DC37D3C69103DA06229E00 /* city.h in CopyFiles */,
+				04A35611819017AB2FFA35B6 /* clevels.h in CopyFiles */,
+				965F13CAA0CAA18E0E1FC057 /* compiler.h in CopyFiles */,
+				9616B8CC0AE7222C66EF62F1 /* cpu.h in CopyFiles */,
+				9BE9AB2027AD6B4F76C7197E /* debug.h in CopyFiles */,
+				5159123D21961C60B8709872 /* error_private.h in CopyFiles */,
+				0AF4C0727DC9275185B73541 /* fse.h in CopyFiles */,
+				65318471D3AB7F7C3B56DA04 /* hist.h in CopyFiles */,
+				12CF614C38E79566063210B5 /* huf.h in CopyFiles */,
+				F9E09FC540D0ADD7192BF0EA /* mem.h in CopyFiles */,
+				8A25B24BAC6E2B7132E05372 /* module.modulemap in CopyFiles */,
+				F2A8E6508799367DF0C627F2 /* pool.h in CopyFiles */,
+				8D477FD99B2F769AABB6CFCF /* portability_macros.h in CopyFiles */,
+				3611799A014D0B9D1C337AEC /* threading.h in CopyFiles */,
+				75ED4F219DB2782067B4B103 /* xxhash.h in CopyFiles */,
+				42E243E29122ECFC16182FE2 /* zstd.h in CopyFiles */,
+				9D01AB0B0A69BB6EFAEE6F42 /* zstd_compress_internal.h in CopyFiles */,
+				BFB7317A7CA68CF64107C03A /* zstd_compress_literals.h in CopyFiles */,
+				DA2FB30EA6415E4864460403 /* zstd_compress_sequences.h in CopyFiles */,
+				106AD272D975D7E28E7B8B71 /* zstd_compress_superblock.h in CopyFiles */,
+				02C6C103A76FC0A0C3E7000A /* zstd_cwksp.h in CopyFiles */,
+				523B7EC81B0A44472FC26D8A /* zstd_ddict.h in CopyFiles */,
+				D9E27B869287D82A81A9F22D /* zstd_decompress_block.h in CopyFiles */,
+				9CDD76D1D815CFC00F88A39D /* zstd_decompress_internal.h in CopyFiles */,
+				8A3E99807D6463734FE5956E /* zstd_deps.h in CopyFiles */,
+				201CB5369F089D7EFC316A49 /* zstd_double_fast.h in CopyFiles */,
+				C819F7BD8E95303AE0DDAE3E /* zstd_errors.h in CopyFiles */,
+				5F4EC861B8C3F9907E5E57CE /* zstd_fast.h in CopyFiles */,
+				9467CE98CB1C66C434ED8C29 /* zstd_internal.h in CopyFiles */,
+				8E923068627F3AB659C67A10 /* zstd_lazy.h in CopyFiles */,
+				B8B6A0BFECF70586BFF39417 /* zstd_ldm.h in CopyFiles */,
+				05102093DD3AAD91D072F5D6 /* zstd_ldm_geartab.h in CopyFiles */,
+				8537EE6A5A2ACD8FC183111A /* zstd_opt.h in CopyFiles */,
+				9D0AC4AF3E60DB5FE9CFD5C4 /* zstd_preSplit.h in CopyFiles */,
+				895D1F7E75C190B625FEBB02 /* zstd_trace.h in CopyFiles */,
+				65C41B90AD4EEB2B676E941E /* zstdmt_compress.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		038218CD81597B8006986444 /* SaveFileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFileLoader.swift; sourceTree = "<group>"; };
+		03A3636DC095980E68FC1D17 /* EditorStore+History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorStore+History.swift"; sourceTree = "<group>"; };
+		05BE9D808AEDBE0F003CAEA7 /* zstd_opt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_opt.c; sourceTree = "<group>"; };
+		10BED9F15587ED9607ECA1AF /* bitstream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		13153F18483E834BC35D1834 /* huf_decompress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = huf_decompress.c; sourceTree = "<group>"; };
+		13207FADFA4C23D310093FA5 /* InventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTests.swift; sourceTree = "<group>"; };
+		132E2FC5FC354783E33B7EFB /* UnlockTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockTable.swift; sourceTree = "<group>"; };
+		154CA75BB9F24A35EA00C4B0 /* zstd_ddict.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_ddict.c; sourceTree = "<group>"; };
+		15B4231C5D8526D14917EA83 /* zstd_compress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_compress.c; sourceTree = "<group>"; };
+		1A4B09D536168DD8B818BC01 /* SaveVersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveVersionTests.swift; sourceTree = "<group>"; };
+		1B208513927560ABD042C430 /* SaveCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SaveCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B21EAAE41641C3925AFAFF8 /* entropy_common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = entropy_common.c; sourceTree = "<group>"; };
+		1BB14B2208B95C60C2862C7D /* zstd_compress_literals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_compress_literals.h; sourceTree = "<group>"; };
+		1D15084AF01F06216060AD58 /* CollectionCatalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CollectionCatalog.json; sourceTree = "<group>"; };
+		1F88CBB0E804D5924C31E0B9 /* allocations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = allocations.h; sourceTree = "<group>"; };
+		2093886B5C2B3C5D7CEE8CC5 /* EditorStore+Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorStore+Progress.swift"; sourceTree = "<group>"; };
+		20AA064FA1652A7D7C61A801 /* SaveField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveField.swift; sourceTree = "<group>"; };
+		242D803FB8E467D7EA46D169 /* huf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = huf.h; sourceTree = "<group>"; };
+		248EB5393B7CBE5D72C2CE56 /* SaveCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCoreTests.swift; sourceTree = "<group>"; };
+		279F651B9282E3E4BA33453B /* threading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threading.h; sourceTree = "<group>"; };
+		296BEAC6870AEA9AD6406E84 /* QuestRewardCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestRewardCatalog.swift; sourceTree = "<group>"; };
+		2CE4CCECC3C1648F14E3F8B2 /* SkillStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillStateTests.swift; sourceTree = "<group>"; };
+		2E1628A0EF7D5EB4B1C24598 /* EditorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDetail.swift; sourceTree = "<group>"; };
+		32B59A41FAEE1BC4E4C42083 /* SaveMacVerify */ = {isa = PBXFileReference; includeInIndex = 0; path = SaveMacVerify; sourceTree = BUILT_PRODUCTS_DIR; };
+		3337CB9DE37C8DE9160383F8 /* zstd_ldm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_ldm.c; sourceTree = "<group>"; };
+		33C508A5A1C9CBABB7EDC3E2 /* zstd_preSplit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_preSplit.h; sourceTree = "<group>"; };
+		34466F21CEEBB18B5D0C6883 /* zstd_decompress_block.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_decompress_block.c; sourceTree = "<group>"; };
+		3640C5903BA151CEB4FE98BC /* threading.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = threading.c; sourceTree = "<group>"; };
+		3797CE3DFDF849BD827037C0 /* zstd_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_internal.h; sourceTree = "<group>"; };
+		3AF181460456368A9639EFC6 /* zstd_compress_sequences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_compress_sequences.h; sourceTree = "<group>"; };
+		3F19980EDC8A6376142E83DA /* InventoryCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCollection.swift; sourceTree = "<group>"; };
+		3FE1F58849A045FB5E2E023D /* zstd_common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_common.c; sourceTree = "<group>"; };
+		3FF444C56C1AC95EABD9802F /* EditorCloseGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorCloseGuard.swift; sourceTree = "<group>"; };
+		4240FD936D7F4FFA8808075F /* zstd_ldm_geartab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_ldm_geartab.h; sourceTree = "<group>"; };
+		44F5EB83443E81AA4DA20E5D /* CharacterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfo.swift; sourceTree = "<group>"; };
+		48A10352B41D5E38B2671003 /* InventoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryFactory.swift; sourceTree = "<group>"; };
+		4A21B4769DBD4FB33CD337C4 /* compiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = compiler.h; sourceTree = "<group>"; };
+		4A43F9FDFB191465F9E40725 /* FilePanels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePanels.swift; sourceTree = "<group>"; };
+		4A55DBAB140E1029556283EC /* UnlockEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockEditorView.swift; sourceTree = "<group>"; };
+		4A64EA7C8AA4AF30B2C47AD6 /* city.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = city.cc; sourceTree = "<group>"; };
+		4B2274205100D614A661F494 /* EditorStore+Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorStore+Inventory.swift"; sourceTree = "<group>"; };
+		4D4CA2F653665D06AC2F5A86 /* debug.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		5005757750D1FE16E25B8FCC /* QuestRewards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestRewards.json; sourceTree = "<group>"; };
+		50F6AADA140544D33C62E6AD /* DeadIsland2SaveMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadIsland2SaveMacApp.swift; sourceTree = "<group>"; };
+		515ABBE6B6B86365136E7F20 /* SaveFileLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFileLoaderTests.swift; sourceTree = "<group>"; };
+		546643A0B0E2B7A940A5DEC7 /* zstd_double_fast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_double_fast.h; sourceTree = "<group>"; };
+		5839AC44A9302D16AE0BD146 /* zstd_cwksp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_cwksp.h; sourceTree = "<group>"; };
+		5883A45DA1DDB6E227C497C5 /* SaveBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveBackup.swift; sourceTree = "<group>"; };
+		5888A25EFF34FAA56574DFAA /* zstd_fast.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_fast.c; sourceTree = "<group>"; };
+		592EE562353037921FA5ACB5 /* zstd_double_fast.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_double_fast.c; sourceTree = "<group>"; };
+		5A2952594CD732FAC1DA6E43 /* EditorCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorCommands.swift; sourceTree = "<group>"; };
+		5BAF066AC1274077530F823C /* WeaponUpgrades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponUpgrades.swift; sourceTree = "<group>"; };
+		5BC13AC59014F50D68B7A447 /* SaveSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSection.swift; sourceTree = "<group>"; };
+		5C26E2B3A9531B5B1A4F4C7C /* GameSessionGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSessionGuard.swift; sourceTree = "<group>"; };
+		5D385C23D8A5EBA467011FA8 /* city.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = city.h; sourceTree = "<group>"; };
+		5ECF8F81BEBA0ED2447CD97F /* ThirdPartyNotices.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ThirdPartyNotices.txt; sourceTree = "<group>"; };
+		5FB949042D6A53FD680681D2 /* fse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fse.h; sourceTree = "<group>"; };
+		611ED30771567B1AA201ACB3 /* zstd_decompress_block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_decompress_block.h; sourceTree = "<group>"; };
+		62708A468A504AED6DC84519 /* fse_decompress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fse_decompress.c; sourceTree = "<group>"; };
+		63FAF736D9616390AC1FE0DA /* DeadIsland2SaveMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeadIsland2SaveMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F39D7E132E76A9836804E7 /* BinaryReaderBoundaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryReaderBoundaryTests.swift; sourceTree = "<group>"; };
+		682DB76466559D10FEFDFBBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6944DF078298CECADE17DF55 /* portability_macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = portability_macros.h; sourceTree = "<group>"; };
+		6A2A542D5167B9918760FEEF /* ItemCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCatalogTests.swift; sourceTree = "<group>"; };
+		6C179925988A8A7A393986BA /* libNativeCodec.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNativeCodec.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA643D0642DF63D386D5AAB /* CompatibilityRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityRequest.swift; sourceTree = "<group>"; };
+		713AD225C39B5BFE18FD86B7 /* EditHistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHistoryTests.swift; sourceTree = "<group>"; };
+		718F76C9CE7C7B81CA3B1858 /* SaveDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDocument.swift; sourceTree = "<group>"; };
+		71FC22A56D4AA4943635BC51 /* EditorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorStore.swift; sourceTree = "<group>"; };
+		729DF5E5A4164E1A47D78FC7 /* NativeCodec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeCodec.cpp; sourceTree = "<group>"; };
+		7A171BBC9905CA86DD374B84 /* hist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hist.h; sourceTree = "<group>"; };
+		7EE7F20BA25AC5F65A7A40D1 /* CollectionCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCatalog.swift; sourceTree = "<group>"; };
+		7F69F5156378EF55D3C2F8F4 /* SaveBackupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveBackupTests.swift; sourceTree = "<group>"; };
+		8211843E6F3DF9B5AAD1BDBF /* zstd_compress_sequences.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_compress_sequences.c; sourceTree = "<group>"; };
+		8254335D89690C5A01607FAC /* zstdmt_compress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstdmt_compress.c; sourceTree = "<group>"; };
+		83B54B1EBC61555FF85EAC2C /* UnlockCatalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UnlockCatalog.json; sourceTree = "<group>"; };
+		891C425C71E7E4416C5EBE68 /* zstd_errors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_errors.h; sourceTree = "<group>"; };
+		8AA3FF4578BBD0B8A08FDE30 /* FieldRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldRow.swift; sourceTree = "<group>"; };
+		8D80C232154036C224C9B166 /* SaveDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDiscovery.swift; sourceTree = "<group>"; };
+		8EF58415A3CEA353F3144287 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8F7039C73B1C7A8A32D98980 /* WorldEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldEditorView.swift; sourceTree = "<group>"; };
+		94C19CB57CE06AFCBFD0386D /* error_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = error_private.h; sourceTree = "<group>"; };
+		9670CE1B5406F5A447BCAC05 /* zstdmt_compress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstdmt_compress.h; sourceTree = "<group>"; };
+		97FC1CA934F3839A1F255C75 /* SaveSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSidebar.swift; sourceTree = "<group>"; };
+		98352B5D09CC3CE728A37361 /* hist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hist.c; sourceTree = "<group>"; };
+		99046A497D0CC4BD4EF5F77C /* zstd_compress_superblock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_compress_superblock.c; sourceTree = "<group>"; };
+		999ACC59E0D96F1079CA0A50 /* zstd_fast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_fast.h; sourceTree = "<group>"; };
+		9AE1C78CE0D1D62B1A8A4EA1 /* QuestRewardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestRewardTests.swift; sourceTree = "<group>"; };
+		9BF927776B5A0C36DECEA97B /* ItemCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCatalog.swift; sourceTree = "<group>"; };
+		9CF99058137287230DBDB64D /* huf_compress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = huf_compress.c; sourceTree = "<group>"; };
+		A534719B5766706BF4D57B30 /* zstd_preSplit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_preSplit.c; sourceTree = "<group>"; };
+		A5DF254AD9C72B4607D566C3 /* zstd_trace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_trace.h; sourceTree = "<group>"; };
+		A8A9BD8C5ED09E3EA5B127DB /* cpu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpu.h; sourceTree = "<group>"; };
+		AC03DA2BD818DF4791108D12 /* ItemCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCreatorView.swift; sourceTree = "<group>"; };
+		AC3FD4736708B5020398F99F /* zstd_compress_superblock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_compress_superblock.h; sourceTree = "<group>"; };
+		AE57D81D984195642CCA6C6A /* xxhash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xxhash.c; sourceTree = "<group>"; };
+		AF5216FE89E64AAF55717CF3 /* SkillEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEditor.swift; sourceTree = "<group>"; };
+		B2C53B14C6321C698FCA0F5E /* xxhash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xxhash.h; sourceTree = "<group>"; };
+		B30ACE563A75445BB88F2D60 /* EditorStore+Platforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorStore+Platforms.swift"; sourceTree = "<group>"; };
+		B345E09306C8059676FF1EF4 /* pool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pool.c; sourceTree = "<group>"; };
+		B38A4A0E1E6761FCBF242FCD /* SkillState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillState.swift; sourceTree = "<group>"; };
+		B514F5206E3AC932E9835D85 /* CollectionEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionEditorView.swift; sourceTree = "<group>"; };
+		B7AF331F9BFE37522B73CA3C /* zstd_ddict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_ddict.h; sourceTree = "<group>"; };
+		B7E3D0BCEC17D0949C0CE6DC /* CharacterInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoTests.swift; sourceTree = "<group>"; };
+		B84E3EBCFDA94407D86AF993 /* zstd_decompress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_decompress.c; sourceTree = "<group>"; };
+		BA46334DA8C468FA68A9363E /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
+		BAAC530115155E9D85A31EBD /* ScopedFileAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopedFileAccess.swift; sourceTree = "<group>"; };
+		BB8EEA56CB5D4ED96738D8A9 /* QuestEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestEditorView.swift; sourceTree = "<group>"; };
+		BCC929D1D3B5A78D33F280C2 /* bits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bits.h; sourceTree = "<group>"; };
+		BD2B746EE6F3F26970882808 /* EditHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHistory.swift; sourceTree = "<group>"; };
+		BDF0921C63FD882CDAB126F1 /* SaveCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE41D1BAA71A6F3A37F71589 /* TaggedRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggedRecord.swift; sourceTree = "<group>"; };
+		C076350C5757A295EF8D2B3F /* ChosenSaveFolders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenSaveFolders.swift; sourceTree = "<group>"; };
+		C15483AB592A13724A8F4CA3 /* WorldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldState.swift; sourceTree = "<group>"; };
+		C1720B79CFECCB55366BD046 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		C178B4AB3787336121B856D6 /* clevels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clevels.h; sourceTree = "<group>"; };
+		C5AB0F43BF2FD56AB47D74C0 /* CashEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashEditor.swift; sourceTree = "<group>"; };
+		C5C9C65A8719BFDDC073A107 /* QuestProgressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestProgressTests.swift; sourceTree = "<group>"; };
+		C685ED69590DE07AFAD9340B /* zstd_decompress_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_decompress_internal.h; sourceTree = "<group>"; };
+		CE65BE05623B12400B653B6C /* zstd_compress_literals.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_compress_literals.c; sourceTree = "<group>"; };
+		CED90588D123DABEBE25AAAC /* debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		CF4F60705F756230B7102BC1 /* UpgradeAndUnlockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeAndUnlockTests.swift; sourceTree = "<group>"; };
+		CF8DF17BBA1C2A6D050A9CC1 /* zstd_lazy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_lazy.c; sourceTree = "<group>"; };
+		D02069AE307451161CA92C04 /* error_private.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = error_private.c; sourceTree = "<group>"; };
+		D039FEA4F5D1B84E74E08756 /* zstd_opt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_opt.h; sourceTree = "<group>"; };
+		D20661C043B7469E2C260CC6 /* ProgressPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressPreview.swift; sourceTree = "<group>"; };
+		D44BF4D88E6C2F9E371A3C8B /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		D94714AF4F06AF36707CF493 /* SkillEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEditorView.swift; sourceTree = "<group>"; };
+		DA1BFC6DFA9E936AF1DB847A /* EditorStore+Unlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorStore+Unlocks.swift"; sourceTree = "<group>"; };
+		DA29D31821EA0AAB4F7F5BEF /* QuestProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestProgress.swift; sourceTree = "<group>"; };
+		DABE6147707D53B9045FE176 /* mem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mem.h; sourceTree = "<group>"; };
+		DC4B571CF2B171CF34FC9C5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E33CA30263CB9D5BE124A2AB /* pool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pool.h; sourceTree = "<group>"; };
+		E58785FC4577E03663B102EE /* SaveContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveContainer.swift; sourceTree = "<group>"; };
+		E5CFE9DAD5BCE1F699F9DA4F /* NativeCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeCodec.h; sourceTree = "<group>"; };
+		E67D65776284ADFD75BC2890 /* CollectionCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCatalogTests.swift; sourceTree = "<group>"; };
+		E91FBFC954E42099A8C0CEF8 /* zstd_compress_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_compress_internal.h; sourceTree = "<group>"; };
+		EDE70D84A4368322BD56D29F /* zstd_lazy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_lazy.h; sourceTree = "<group>"; };
+		EE1A70BC9E9F7A22A4DD4C3C /* zstd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd.h; sourceTree = "<group>"; };
+		F2D5C3736CE5D6AC84224EBA /* UpgradeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeEditorView.swift; sourceTree = "<group>"; };
+		F32008C8E14D5272A01CD0B2 /* fse_compress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fse_compress.c; sourceTree = "<group>"; };
+		F40579A13F5C7C9C1DE51F66 /* UnrealProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnrealProperty.swift; sourceTree = "<group>"; };
+		F523D6781B16DC3B17829B22 /* CollectionManifestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionManifestTests.swift; sourceTree = "<group>"; };
+		F59C144BAC613B2E84B05A04 /* PendingChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingChanges.swift; sourceTree = "<group>"; };
+		F96C0E9B9DE7B75F28E7210C /* WorldStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldStateTests.swift; sourceTree = "<group>"; };
+		FA34A6F06CF3B3B66280FB92 /* zstd_ldm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_ldm.h; sourceTree = "<group>"; };
+		FD386FBF18B4F1F5CEB50B57 /* BinaryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryReader.swift; sourceTree = "<group>"; };
+		FF8B9F0FE3B4764634512421 /* zstd_deps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd_deps.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15E778417A56D8F1275534FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D670C8773496DFED70BD466 /* SaveCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D57A344327D53EE09BABA66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FCC9D7123B9BCF9F0506CB /* SaveCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919ABACEC252378359F62D0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABBAD056C367AEA8C411F82 /* libNativeCodec.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F903F3E070A366B2DDEE67A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6690D29F6C8F73D8A6D6A64C /* SaveCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0468D2DA3684893ACF8AA375 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				71FC22A56D4AA4943635BC51 /* EditorStore.swift */,
+				03A3636DC095980E68FC1D17 /* EditorStore+History.swift */,
+				4B2274205100D614A661F494 /* EditorStore+Inventory.swift */,
+				B30ACE563A75445BB88F2D60 /* EditorStore+Platforms.swift */,
+				2093886B5C2B3C5D7CEE8CC5 /* EditorStore+Progress.swift */,
+				DA1BFC6DFA9E936AF1DB847A /* EditorStore+Unlocks.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		1873D558870AFEAD10030164 /* cityhash */ = {
+			isa = PBXGroup;
+			children = (
+				4A64EA7C8AA4AF30B2C47AD6 /* city.cc */,
+				5D385C23D8A5EBA467011FA8 /* city.h */,
+			);
+			path = cityhash;
+			sourceTree = "<group>";
+		};
+		20E85F2A40A5824848AC1A26 /* compress */ = {
+			isa = PBXGroup;
+			children = (
+				C178B4AB3787336121B856D6 /* clevels.h */,
+				F32008C8E14D5272A01CD0B2 /* fse_compress.c */,
+				98352B5D09CC3CE728A37361 /* hist.c */,
+				7A171BBC9905CA86DD374B84 /* hist.h */,
+				9CF99058137287230DBDB64D /* huf_compress.c */,
+				E91FBFC954E42099A8C0CEF8 /* zstd_compress_internal.h */,
+				CE65BE05623B12400B653B6C /* zstd_compress_literals.c */,
+				1BB14B2208B95C60C2862C7D /* zstd_compress_literals.h */,
+				8211843E6F3DF9B5AAD1BDBF /* zstd_compress_sequences.c */,
+				3AF181460456368A9639EFC6 /* zstd_compress_sequences.h */,
+				99046A497D0CC4BD4EF5F77C /* zstd_compress_superblock.c */,
+				AC3FD4736708B5020398F99F /* zstd_compress_superblock.h */,
+				15B4231C5D8526D14917EA83 /* zstd_compress.c */,
+				5839AC44A9302D16AE0BD146 /* zstd_cwksp.h */,
+				592EE562353037921FA5ACB5 /* zstd_double_fast.c */,
+				546643A0B0E2B7A940A5DEC7 /* zstd_double_fast.h */,
+				5888A25EFF34FAA56574DFAA /* zstd_fast.c */,
+				999ACC59E0D96F1079CA0A50 /* zstd_fast.h */,
+				CF8DF17BBA1C2A6D050A9CC1 /* zstd_lazy.c */,
+				EDE70D84A4368322BD56D29F /* zstd_lazy.h */,
+				4240FD936D7F4FFA8808075F /* zstd_ldm_geartab.h */,
+				3337CB9DE37C8DE9160383F8 /* zstd_ldm.c */,
+				FA34A6F06CF3B3B66280FB92 /* zstd_ldm.h */,
+				05BE9D808AEDBE0F003CAEA7 /* zstd_opt.c */,
+				D039FEA4F5D1B84E74E08756 /* zstd_opt.h */,
+				A534719B5766706BF4D57B30 /* zstd_preSplit.c */,
+				33C508A5A1C9CBABB7EDC3E2 /* zstd_preSplit.h */,
+				8254335D89690C5A01607FAC /* zstdmt_compress.c */,
+				9670CE1B5406F5A447BCAC05 /* zstdmt_compress.h */,
+			);
+			path = compress;
+			sourceTree = "<group>";
+		};
+		3C08A66DC1DDA7CF7B7E5BED /* NativeCodec */ = {
+			isa = PBXGroup;
+			children = (
+				D44BF4D88E6C2F9E371A3C8B /* module.modulemap */,
+				729DF5E5A4164E1A47D78FC7 /* NativeCodec.cpp */,
+				E5CFE9DAD5BCE1F699F9DA4F /* NativeCodec.h */,
+			);
+			path = NativeCodec;
+			sourceTree = "<group>";
+		};
+		3D1C06BF46E25EBFFE8EA90C /* SaveCore */ = {
+			isa = PBXGroup;
+			children = (
+				FD386FBF18B4F1F5CEB50B57 /* BinaryReader.swift */,
+				44F5EB83443E81AA4DA20E5D /* CharacterInfo.swift */,
+				7EE7F20BA25AC5F65A7A40D1 /* CollectionCatalog.swift */,
+				BD2B746EE6F3F26970882808 /* EditHistory.swift */,
+				3F19980EDC8A6376142E83DA /* InventoryCollection.swift */,
+				48A10352B41D5E38B2671003 /* InventoryFactory.swift */,
+				9BF927776B5A0C36DECEA97B /* ItemCatalog.swift */,
+				F59C144BAC613B2E84B05A04 /* PendingChanges.swift */,
+				D20661C043B7469E2C260CC6 /* ProgressPreview.swift */,
+				DA29D31821EA0AAB4F7F5BEF /* QuestProgress.swift */,
+				296BEAC6870AEA9AD6406E84 /* QuestRewardCatalog.swift */,
+				5883A45DA1DDB6E227C497C5 /* SaveBackup.swift */,
+				E58785FC4577E03663B102EE /* SaveContainer.swift */,
+				8D80C232154036C224C9B166 /* SaveDiscovery.swift */,
+				718F76C9CE7C7B81CA3B1858 /* SaveDocument.swift */,
+				20AA064FA1652A7D7C61A801 /* SaveField.swift */,
+				038218CD81597B8006986444 /* SaveFileLoader.swift */,
+				5BC13AC59014F50D68B7A447 /* SaveSection.swift */,
+				AF5216FE89E64AAF55717CF3 /* SkillEditor.swift */,
+				B38A4A0E1E6761FCBF242FCD /* SkillState.swift */,
+				BE41D1BAA71A6F3A37F71589 /* TaggedRecord.swift */,
+				132E2FC5FC354783E33B7EFB /* UnlockTable.swift */,
+				F40579A13F5C7C9C1DE51F66 /* UnrealProperty.swift */,
+				5BAF066AC1274077530F823C /* WeaponUpgrades.swift */,
+				C15483AB592A13724A8F4CA3 /* WorldState.swift */,
+			);
+			path = SaveCore;
+			sourceTree = "<group>";
+		};
+		40C61178A8649BF7AFE8EBF6 /* zstd */ = {
+			isa = PBXGroup;
+			children = (
+				FE60CE06D5810E2B6FD1C5F2 /* lib */,
+			);
+			path = zstd;
+			sourceTree = "<group>";
+		};
+		59C97439918BD972ED0FAA63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D15084AF01F06216060AD58 /* CollectionCatalog.json */,
+				5005757750D1FE16E25B8FCC /* QuestRewards.json */,
+				5ECF8F81BEBA0ED2447CD97F /* ThirdPartyNotices.txt */,
+				83B54B1EBC61555FF85EAC2C /* UnlockCatalog.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5C44E77BE0D2C81891D4E4C7 /* SaveMac */ = {
+			isa = PBXGroup;
+			children = (
+				682DB76466559D10FEFDFBBC /* Assets.xcassets */,
+				AAFE59F924C81A1A57D178BF /* App */,
+				59C97439918BD972ED0FAA63 /* Resources */,
+				6ABDC04A73D528CF23C54F2C /* Services */,
+				0468D2DA3684893ACF8AA375 /* Stores */,
+				929F84BE289FE3E41DCCDF6B /* Views */,
+			);
+			path = SaveMac;
+			sourceTree = "<group>";
+		};
+		5EB0531F462EFD964CEA8CDD /* Verifier */ = {
+			isa = PBXGroup;
+			children = (
+				6EA643D0642DF63D386D5AAB /* CompatibilityRequest.swift */,
+				8EF58415A3CEA353F3144287 /* main.swift */,
+			);
+			path = Verifier;
+			sourceTree = "<group>";
+		};
+		6ABDC04A73D528CF23C54F2C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C076350C5757A295EF8D2B3F /* ChosenSaveFolders.swift */,
+				3FF444C56C1AC95EABD9802F /* EditorCloseGuard.swift */,
+				5A2952594CD732FAC1DA6E43 /* EditorCommands.swift */,
+				4A43F9FDFB191465F9E40725 /* FilePanels.swift */,
+				5C26E2B3A9531B5B1A4F4C7C /* GameSessionGuard.swift */,
+				BAAC530115155E9D85A31EBD /* ScopedFileAccess.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		712765935B24F9D2228E356B /* decompress */ = {
+			isa = PBXGroup;
+			children = (
+				13153F18483E834BC35D1834 /* huf_decompress.c */,
+				154CA75BB9F24A35EA00C4B0 /* zstd_ddict.c */,
+				B7AF331F9BFE37522B73CA3C /* zstd_ddict.h */,
+				34466F21CEEBB18B5D0C6883 /* zstd_decompress_block.c */,
+				611ED30771567B1AA201ACB3 /* zstd_decompress_block.h */,
+				C685ED69590DE07AFAD9340B /* zstd_decompress_internal.h */,
+				B84E3EBCFDA94407D86AF993 /* zstd_decompress.c */,
+			);
+			path = decompress;
+			sourceTree = "<group>";
+		};
+		875940C0B071AB95FFD7FB0D = {
+			isa = PBXGroup;
+			children = (
+				BA46334DA8C468FA68A9363E /* LICENSE */,
+				D7951FCC9DC4C394D826C278 /* macOS */,
+				F69AB48DD83D8D57A6DB27AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		929F84BE289FE3E41DCCDF6B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5AB0F43BF2FD56AB47D74C0 /* CashEditor.swift */,
+				B514F5206E3AC932E9835D85 /* CollectionEditorView.swift */,
+				DC4B571CF2B171CF34FC9C5F /* ContentView.swift */,
+				2E1628A0EF7D5EB4B1C24598 /* EditorDetail.swift */,
+				8AA3FF4578BBD0B8A08FDE30 /* FieldRow.swift */,
+				C1720B79CFECCB55366BD046 /* InventoryView.swift */,
+				AC03DA2BD818DF4791108D12 /* ItemCreatorView.swift */,
+				BB8EEA56CB5D4ED96738D8A9 /* QuestEditorView.swift */,
+				97FC1CA934F3839A1F255C75 /* SaveSidebar.swift */,
+				D94714AF4F06AF36707CF493 /* SkillEditorView.swift */,
+				4A55DBAB140E1029556283EC /* UnlockEditorView.swift */,
+				F2D5C3736CE5D6AC84224EBA /* UpgradeEditorView.swift */,
+				8F7039C73B1C7A8A32D98980 /* WorldEditorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAFE59F924C81A1A57D178BF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				50F6AADA140544D33C62E6AD /* DeadIsland2SaveMacApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D7951FCC9DC4C394D826C278 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3C08A66DC1DDA7CF7B7E5BED /* NativeCodec */,
+				3D1C06BF46E25EBFFE8EA90C /* SaveCore */,
+				5C44E77BE0D2C81891D4E4C7 /* SaveMac */,
+				F285BE319849540AD5AD17B2 /* Tests */,
+				F08E655A26080376A9ECAF60 /* ThirdParty */,
+				5EB0531F462EFD964CEA8CDD /* Verifier */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		E7FF77B7CB3F965DFFC2CF36 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				1F88CBB0E804D5924C31E0B9 /* allocations.h */,
+				BCC929D1D3B5A78D33F280C2 /* bits.h */,
+				10BED9F15587ED9607ECA1AF /* bitstream.h */,
+				4A21B4769DBD4FB33CD337C4 /* compiler.h */,
+				A8A9BD8C5ED09E3EA5B127DB /* cpu.h */,
+				4D4CA2F653665D06AC2F5A86 /* debug.c */,
+				CED90588D123DABEBE25AAAC /* debug.h */,
+				1B21EAAE41641C3925AFAFF8 /* entropy_common.c */,
+				D02069AE307451161CA92C04 /* error_private.c */,
+				94C19CB57CE06AFCBFD0386D /* error_private.h */,
+				62708A468A504AED6DC84519 /* fse_decompress.c */,
+				5FB949042D6A53FD680681D2 /* fse.h */,
+				242D803FB8E467D7EA46D169 /* huf.h */,
+				DABE6147707D53B9045FE176 /* mem.h */,
+				B345E09306C8059676FF1EF4 /* pool.c */,
+				E33CA30263CB9D5BE124A2AB /* pool.h */,
+				6944DF078298CECADE17DF55 /* portability_macros.h */,
+				3640C5903BA151CEB4FE98BC /* threading.c */,
+				279F651B9282E3E4BA33453B /* threading.h */,
+				AE57D81D984195642CCA6C6A /* xxhash.c */,
+				B2C53B14C6321C698FCA0F5E /* xxhash.h */,
+				3FE1F58849A045FB5E2E023D /* zstd_common.c */,
+				FF8B9F0FE3B4764634512421 /* zstd_deps.h */,
+				3797CE3DFDF849BD827037C0 /* zstd_internal.h */,
+				A5DF254AD9C72B4607D566C3 /* zstd_trace.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F08E655A26080376A9ECAF60 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				1873D558870AFEAD10030164 /* cityhash */,
+				40C61178A8649BF7AFE8EBF6 /* zstd */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		F285BE319849540AD5AD17B2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				65F39D7E132E76A9836804E7 /* BinaryReaderBoundaryTests.swift */,
+				B7E3D0BCEC17D0949C0CE6DC /* CharacterInfoTests.swift */,
+				E67D65776284ADFD75BC2890 /* CollectionCatalogTests.swift */,
+				F523D6781B16DC3B17829B22 /* CollectionManifestTests.swift */,
+				713AD225C39B5BFE18FD86B7 /* EditHistoryTests.swift */,
+				13207FADFA4C23D310093FA5 /* InventoryTests.swift */,
+				6A2A542D5167B9918760FEEF /* ItemCatalogTests.swift */,
+				C5C9C65A8719BFDDC073A107 /* QuestProgressTests.swift */,
+				9AE1C78CE0D1D62B1A8A4EA1 /* QuestRewardTests.swift */,
+				7F69F5156378EF55D3C2F8F4 /* SaveBackupTests.swift */,
+				248EB5393B7CBE5D72C2CE56 /* SaveCoreTests.swift */,
+				515ABBE6B6B86365136E7F20 /* SaveFileLoaderTests.swift */,
+				1A4B09D536168DD8B818BC01 /* SaveVersionTests.swift */,
+				2CE4CCECC3C1648F14E3F8B2 /* SkillStateTests.swift */,
+				CF4F60705F756230B7102BC1 /* UpgradeAndUnlockTests.swift */,
+				F96C0E9B9DE7B75F28E7210C /* WorldStateTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F69AB48DD83D8D57A6DB27AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63FAF736D9616390AC1FE0DA /* DeadIsland2SaveMac.app */,
+				6C179925988A8A7A393986BA /* libNativeCodec.a */,
+				1B208513927560ABD042C430 /* SaveCore.framework */,
+				BDF0921C63FD882CDAB126F1 /* SaveCoreTests.xctest */,
+				32B59A41FAEE1BC4E4C42083 /* SaveMacVerify */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE60CE06D5810E2B6FD1C5F2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				891C425C71E7E4416C5EBE68 /* zstd_errors.h */,
+				EE1A70BC9E9F7A22A4DD4C3C /* zstd.h */,
+				E7FF77B7CB3F965DFFC2CF36 /* common */,
+				20E85F2A40A5824848AC1A26 /* compress */,
+				712765935B24F9D2228E356B /* decompress */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26541B713BC0AE7B21798B74 /* SaveMacVerify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6513B89DFF6F142C93E17E8C /* Build configuration list for PBXNativeTarget "SaveMacVerify" */;
+			buildPhases = (
+				FCBEBEE1D065FC527BCF9126 /* Sources */,
+				3D57A344327D53EE09BABA66 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65E42BE156FE0C19DF87D25A /* PBXTargetDependency */,
+			);
+			name = SaveMacVerify;
+			packageProductDependencies = (
+			);
+			productName = SaveMacVerify;
+			productReference = 32B59A41FAEE1BC4E4C42083 /* SaveMacVerify */;
+			productType = "com.apple.product-type.tool";
+		};
+		68A4BBC0DF10C6AEBC00C399 /* DeadIsland2SaveMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76DAB4B55328ACB91CAF88D8 /* Build configuration list for PBXNativeTarget "DeadIsland2SaveMac" */;
+			buildPhases = (
+				9FB38ED66DC31D9C5C71BCAF /* Sources */,
+				BE36DDBA8BC834B9533160CA /* Resources */,
+				15E778417A56D8F1275534FC /* Frameworks */,
+				174C4C1257F631C73AC96A13 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95EF0BC2D70E0843D75D3515 /* PBXTargetDependency */,
+			);
+			name = DeadIsland2SaveMac;
+			packageProductDependencies = (
+			);
+			productName = DeadIsland2SaveMac;
+			productReference = 63FAF736D9616390AC1FE0DA /* DeadIsland2SaveMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACE895BC4648FD7597E8059B /* NativeCodec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C24492C32B012CBC6CBB4AD /* Build configuration list for PBXNativeTarget "NativeCodec" */;
+			buildPhases = (
+				69C815016B78D23101FB39CA /* CopyFiles */,
+				9878431EE2546D6EF89530C2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NativeCodec;
+			packageProductDependencies = (
+			);
+			productName = NativeCodec;
+			productReference = 6C179925988A8A7A393986BA /* libNativeCodec.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C2D967B189173C2BEC561ECC /* SaveCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532B25CD4EE90D87E259124F /* Build configuration list for PBXNativeTarget "SaveCoreTests" */;
+			buildPhases = (
+				42728EFE57A9DCAC3CF0F622 /* Sources */,
+				F903F3E070A366B2DDEE67A3 /* Frameworks */,
+				5913D1967A0797C52ADC8058 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15F0F6BC653CDA8ED33C205F /* PBXTargetDependency */,
+			);
+			name = SaveCoreTests;
+			packageProductDependencies = (
+			);
+			productName = SaveCoreTests;
+			productReference = BDF0921C63FD882CDAB126F1 /* SaveCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E0975BA0CC1A3431A0374755 /* SaveCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5420B2600694D26CFB0EF47A /* Build configuration list for PBXNativeTarget "SaveCore" */;
+			buildPhases = (
+				E214A9508D687C84A0621463 /* Sources */,
+				919ABACEC252378359F62D0F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				024E6F93DDFAC9D89C228F76 /* PBXTargetDependency */,
+			);
+			name = SaveCore;
+			packageProductDependencies = (
+			);
+			productName = SaveCore;
+			productReference = 1B208513927560ABD042C430 /* SaveCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EC45AB00C0AB1DB4EA9080D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					26541B713BC0AE7B21798B74 = {
+						ProvisioningStyle = Manual;
+					};
+					68A4BBC0DF10C6AEBC00C399 = {
+						ProvisioningStyle = Manual;
+					};
+					ACE895BC4648FD7597E8059B = {
+						ProvisioningStyle = Manual;
+					};
+					C2D967B189173C2BEC561ECC = {
+						ProvisioningStyle = Manual;
+					};
+					E0975BA0CC1A3431A0374755 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 8A81D81C5DBB0A1E7343C693 /* Build configuration list for PBXProject "DeadIsland2SaveMac" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 875940C0B071AB95FFD7FB0D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F69AB48DD83D8D57A6DB27AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACE895BC4648FD7597E8059B /* NativeCodec */,
+				E0975BA0CC1A3431A0374755 /* SaveCore */,
+				68A4BBC0DF10C6AEBC00C399 /* DeadIsland2SaveMac */,
+				26541B713BC0AE7B21798B74 /* SaveMacVerify */,
+				C2D967B189173C2BEC561ECC /* SaveCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE36DDBA8BC834B9533160CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE214C27D9B6085F56AFBC7 /* Assets.xcassets in Resources */,
+				4D8DE1D061112E1539A33C8E /* CollectionCatalog.json in Resources */,
+				61BA3C4D1A50CBF8ECB02110 /* LICENSE in Resources */,
+				6FA6111BF2DA21DE5F57E7A7 /* QuestRewards.json in Resources */,
+				7967FB87F06B400555F9FE8E /* ThirdPartyNotices.txt in Resources */,
+				FC9EF90311BFBF69B8192631 /* UnlockCatalog.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42728EFE57A9DCAC3CF0F622 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34D4DCE612F0997F33F2EA75 /* BinaryReaderBoundaryTests.swift in Sources */,
+				838F45F08BA5408F64D29632 /* CharacterInfoTests.swift in Sources */,
+				70288B71A3AE26279C038F3D /* CollectionCatalogTests.swift in Sources */,
+				DF969B9748D4A5A6D821BA6E /* CollectionManifestTests.swift in Sources */,
+				51E8E65057103A49CF856CE0 /* EditHistoryTests.swift in Sources */,
+				184129F8CA38435AE0CE664B /* InventoryTests.swift in Sources */,
+				33E7BBCFBB0DE79C799C9F08 /* ItemCatalogTests.swift in Sources */,
+				A4BF102A02E07AAAFF84E137 /* QuestProgressTests.swift in Sources */,
+				CB754651294C94912F23BAC6 /* QuestRewardTests.swift in Sources */,
+				CE31BCEEE1CDD6DB89A4FB0E /* SaveBackupTests.swift in Sources */,
+				DD583C1BE859A98F031E8192 /* SaveCoreTests.swift in Sources */,
+				EA6322B501D2243AC069A6E9 /* SaveFileLoaderTests.swift in Sources */,
+				B6C3F596D2952F5B7057E11F /* SaveVersionTests.swift in Sources */,
+				D19F98AAE153D3FA5FC5435F /* SkillStateTests.swift in Sources */,
+				D20E82223B739BD989D914E1 /* UpgradeAndUnlockTests.swift in Sources */,
+				D2C5EDD3AFF0369CAFC3DDFE /* WorldStateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9878431EE2546D6EF89530C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD279E940F06AC16A51368F4 /* NativeCodec.cpp in Sources */,
+				1018EA4C7358256556BCE28F /* city.cc in Sources */,
+				7276B7E1B99911713FD2D0CB /* debug.c in Sources */,
+				8AFFB57A7242AD8267EA18C1 /* entropy_common.c in Sources */,
+				6F312C94E7F99C73B90087E2 /* error_private.c in Sources */,
+				56142D5A29CF183AA50BC340 /* fse_compress.c in Sources */,
+				14888F93DC83C9FD7328393A /* fse_decompress.c in Sources */,
+				971A8EA10B6482F529E56013 /* hist.c in Sources */,
+				B747514FAAC596E2AF29BEA9 /* huf_compress.c in Sources */,
+				9467336EFD36615CEA2D806C /* huf_decompress.c in Sources */,
+				CC64DC654540422DCD956521 /* pool.c in Sources */,
+				84B593DCBD03C1645BA43642 /* threading.c in Sources */,
+				A3443600B21D736607E8FD41 /* xxhash.c in Sources */,
+				5D0DAA71E29F146B7BF633FE /* zstd_common.c in Sources */,
+				7BDA2B30536C4256D586A5B6 /* zstd_compress.c in Sources */,
+				45A4FD05EEEF766595FC0CA9 /* zstd_compress_literals.c in Sources */,
+				E81E892E882E4F0151742B22 /* zstd_compress_sequences.c in Sources */,
+				AC2230CE810F35A7AD30A371 /* zstd_compress_superblock.c in Sources */,
+				A9DFE71A348BEDAC9DE75549 /* zstd_ddict.c in Sources */,
+				EB600030C142C5019B69D737 /* zstd_decompress.c in Sources */,
+				52E998C1B97DB3CB095B9A4E /* zstd_decompress_block.c in Sources */,
+				D5189C954E3AE9CF40DEEC9E /* zstd_double_fast.c in Sources */,
+				4AE80284E83A634B24F817DD /* zstd_fast.c in Sources */,
+				81D84A5EEB212E799ECDD458 /* zstd_lazy.c in Sources */,
+				E99025D2E0CDCC3C55346C30 /* zstd_ldm.c in Sources */,
+				B00D0F434FA76695D6D2FB10 /* zstd_opt.c in Sources */,
+				2A905C477A51F193AED900AF /* zstd_preSplit.c in Sources */,
+				161748F380365B62B2B1514C /* zstdmt_compress.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB38ED66DC31D9C5C71BCAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080021A88A7720A0D6175493 /* CashEditor.swift in Sources */,
+				8BDFA26A296B3AE05D59CFB0 /* ChosenSaveFolders.swift in Sources */,
+				D828E9509916D76555E66B95 /* CollectionEditorView.swift in Sources */,
+				8A313D6993BB555B4E4429F9 /* ContentView.swift in Sources */,
+				CAFEC7077423BE38CB694291 /* DeadIsland2SaveMacApp.swift in Sources */,
+				3D5DDBCB80E3FD4175003C4C /* EditorCloseGuard.swift in Sources */,
+				90636DC0F2504E7F927C49C3 /* EditorCommands.swift in Sources */,
+				B4E25FEDE013C3359805B636 /* EditorDetail.swift in Sources */,
+				C980561B96ADAF756D594EAF /* EditorStore+History.swift in Sources */,
+				01A19360C6B82733599C027E /* EditorStore+Inventory.swift in Sources */,
+				90D989733526EEC55F07B95D /* EditorStore+Platforms.swift in Sources */,
+				448736D871DD254A6398CA35 /* EditorStore+Progress.swift in Sources */,
+				90EDE139CC189188FB0CBD02 /* EditorStore+Unlocks.swift in Sources */,
+				9B63B16E0015DDC36E07F22E /* EditorStore.swift in Sources */,
+				8E39198AB5C43E3E10F76080 /* FieldRow.swift in Sources */,
+				B4DE8AFC7FD02A3CB49896A6 /* FilePanels.swift in Sources */,
+				01A4B9E963212BD0DA47CABC /* GameSessionGuard.swift in Sources */,
+				E554242F602C2DED519D7F57 /* InventoryView.swift in Sources */,
+				F8CD4FB366F99F6DD3185FA8 /* ItemCreatorView.swift in Sources */,
+				C0496FC7CC529958B016E281 /* QuestEditorView.swift in Sources */,
+				C10172E67DF83A84F7334B0E /* SaveSidebar.swift in Sources */,
+				A6E6F17D7951F2AE146FA560 /* ScopedFileAccess.swift in Sources */,
+				8BC3F7C00A23FEB695E08CFF /* SkillEditorView.swift in Sources */,
+				A7961A5F49ABDCB4BF046C25 /* UnlockEditorView.swift in Sources */,
+				54D6E63F2E2745EDF21056FC /* UpgradeEditorView.swift in Sources */,
+				2152A493894E22369BA13FCF /* WorldEditorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E214A9508D687C84A0621463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF39025FDE42C2D49EA70A87 /* BinaryReader.swift in Sources */,
+				4BD62C10CE7F6300A64BC1F8 /* CharacterInfo.swift in Sources */,
+				2D81BADE43321353EC1E4E55 /* CollectionCatalog.swift in Sources */,
+				726B37B932AF64A9F172737D /* EditHistory.swift in Sources */,
+				AB36D4572A8D2F3C754FBDBB /* InventoryCollection.swift in Sources */,
+				E8FE1DBAB46C489C68D16CD2 /* InventoryFactory.swift in Sources */,
+				83453C81B86C7DE037125480 /* ItemCatalog.swift in Sources */,
+				F5AA53E686CEC02A19A0ADBB /* PendingChanges.swift in Sources */,
+				FBE0D1AC742892DF5868FFD4 /* ProgressPreview.swift in Sources */,
+				B374C646A0AD550585FB0187 /* QuestProgress.swift in Sources */,
+				83F8331865EDC3AB38CFAB5F /* QuestRewardCatalog.swift in Sources */,
+				33055D8713E2A69AECEA9ECD /* SaveBackup.swift in Sources */,
+				6201C8619AB0015143CB2FA6 /* SaveContainer.swift in Sources */,
+				1F47F3AEF3B2247107CC591D /* SaveDiscovery.swift in Sources */,
+				97F17F7628DB24679DE75FD6 /* SaveDocument.swift in Sources */,
+				499CE6E4F267A609F58AC248 /* SaveField.swift in Sources */,
+				8836B70C0B595DBA7A3E822C /* SaveFileLoader.swift in Sources */,
+				E648765DD8150D9CA71CE98E /* SaveSection.swift in Sources */,
+				13EAB433B14FC5DB8B225DB9 /* SkillEditor.swift in Sources */,
+				34CD5DB7F84F88B65A6FB311 /* SkillState.swift in Sources */,
+				B0EC62ABE5F7FCF801E45E43 /* TaggedRecord.swift in Sources */,
+				A516CD31ED830BA2B2ED1A5D /* UnlockTable.swift in Sources */,
+				3771820257D9CE5DF3987296 /* UnrealProperty.swift in Sources */,
+				4DEE9905691391DBDEBE636B /* WeaponUpgrades.swift in Sources */,
+				21066CE81FD9BBC3F6069272 /* WorldState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBEBEE1D065FC527BCF9126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6D11FC949FE43120CDF568 /* CompatibilityRequest.swift in Sources */,
+				B41AA704FA4E103F4CEFA740 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		024E6F93DDFAC9D89C228F76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACE895BC4648FD7597E8059B /* NativeCodec */;
+			targetProxy = 0F4F2AB869E8DA810E27622D /* PBXContainerItemProxy */;
+		};
+		15F0F6BC653CDA8ED33C205F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0975BA0CC1A3431A0374755 /* SaveCore */;
+			targetProxy = 638BB0BED594ECF1363E788D /* PBXContainerItemProxy */;
+		};
+		65E42BE156FE0C19DF87D25A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0975BA0CC1A3431A0374755 /* SaveCore */;
+			targetProxy = B1DB417C4D743BF1ACCEDF45 /* PBXContainerItemProxy */;
+		};
+		95EF0BC2D70E0843D75D3515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0975BA0CC1A3431A0374755 /* SaveCore */;
+			targetProxy = 1B6B457C9B786DC08A8BE287 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12056387FA2D8D68CE821215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I $(SRCROOT)/macOS/NativeCodec";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darkuser89.DeadIsland2SaveMac.Tests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		39F006DE2743BD8464A417EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited) -lc++",
+					"-ObjC",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I $(SRCROOT)/macOS/NativeCodec";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darkuser89.DeadIsland2SaveMac.Core;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		3B15AE7C45AB6642AC158475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darkuser89.SaveMacVerify;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		756C951C55F209CC9052C965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darkuser89.SaveMacVerify;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		89803C5BC24A40F5573694BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 8;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.4.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/macOS/NativeCodec";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9EE7F4677AA9F36E71FA4819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 8;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.4.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/macOS/NativeCodec";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BCA654DF83F0024CF645BB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited) ZSTD_DISABLE_ASM=1";
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/macOS/ThirdParty/cityhash",
+					"$(SRCROOT)/macOS/ThirdParty/zstd/lib",
+					"$(SRCROOT)/macOS/ThirdParty/zstd/lib/common",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.darkuser89.NativeCodec;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BDC85B2B8647E04AF13C9AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dead Island 2 Save Mac";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darkuser89.DeadIsland2SaveMac;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BE98182F74376701053D2641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I $(SRCROOT)/macOS/NativeCodec";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darkuser89.DeadIsland2SaveMac.Tests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CB57246D11C50DDDEB527DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dead Island 2 Save Mac";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darkuser89.DeadIsland2SaveMac;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D0E89B856B9AC1953C536EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited) -lc++",
+					"-ObjC",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I $(SRCROOT)/macOS/NativeCodec";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darkuser89.DeadIsland2SaveMac.Core;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		F12490D6EF2C7A14050B3D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited) ZSTD_DISABLE_ASM=1";
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/macOS/ThirdParty/cityhash",
+					"$(SRCROOT)/macOS/ThirdParty/zstd/lib",
+					"$(SRCROOT)/macOS/ThirdParty/zstd/lib/common",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.darkuser89.NativeCodec;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		532B25CD4EE90D87E259124F /* Build configuration list for PBXNativeTarget "SaveCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12056387FA2D8D68CE821215 /* Debug */,
+				BE98182F74376701053D2641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5420B2600694D26CFB0EF47A /* Build configuration list for PBXNativeTarget "SaveCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39F006DE2743BD8464A417EB /* Debug */,
+				D0E89B856B9AC1953C536EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5C24492C32B012CBC6CBB4AD /* Build configuration list for PBXNativeTarget "NativeCodec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12490D6EF2C7A14050B3D1C /* Debug */,
+				BCA654DF83F0024CF645BB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6513B89DFF6F142C93E17E8C /* Build configuration list for PBXNativeTarget "SaveMacVerify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B15AE7C45AB6642AC158475 /* Debug */,
+				756C951C55F209CC9052C965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		76DAB4B55328ACB91CAF88D8 /* Build configuration list for PBXNativeTarget "DeadIsland2SaveMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDC85B2B8647E04AF13C9AE1 /* Debug */,
+				CB57246D11C50DDDEB527DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8A81D81C5DBB0A1E7343C693 /* Build configuration list for PBXProject "DeadIsland2SaveMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89803C5BC24A40F5573694BE /* Debug */,
+				9EE7F4677AA9F36E71FA4819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EC45AB00C0AB1DB4EA9080D /* Project object */;
+}
