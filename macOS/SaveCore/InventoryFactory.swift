@@ -8,7 +8,14 @@ enum InventoryFactory {
     }
     static func number(_ value: UInt32) -> [UInt8] { var bytes: [UInt8] = []; bytes.appendLE(value); return bytes }
     static func tag(_ name: String, type: String, value: [UInt8], extra: [UInt8] = []) -> [UInt8] {
-        string(name) + string(type) + number(UInt32(value.count)) + number(0) + extra + [0] + value
+        var bytes = string(name)
+        bytes.append(contentsOf: string(type))
+        bytes.appendLE(UInt32(value.count))
+        bytes.appendLE(UInt32(0))
+        bytes.append(contentsOf: extra)
+        bytes.append(0)
+        bytes.append(contentsOf: value)
+        return bytes
     }
     static func structure(_ name: String, type: String, value: [UInt8]) -> [UInt8] {
         tag(name, type: "StructProperty", value: value, extra: string(type) + [UInt8](repeating: 0, count: 16))
