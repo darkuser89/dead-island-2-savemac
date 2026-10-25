@@ -4,7 +4,11 @@ import XCTest
 
 final class SaveVersionTests: XCTestCase {
     func testOlderSuppliedSaveBuildIsPreservedOnReencodeAndExport() throws {
-        let bytes = InventoryFactory.number(1) + InventoryFactory.string("CharacterProfileAccount") + InventoryFactory.number(1) + [0]
+        let bytes = fixtureBytes(
+            InventoryFactory.number(1),
+            InventoryFactory.string("CharacterProfileAccount"),
+            InventoryFactory.number(1),
+            [0])
         let header: [UInt8] = [10,0,3,0,1,217,14,81]
         for version: UInt32 in [0x00100286, 0x0010d833, 0x0011e5f3] {
         let container = try SaveContainer(header: header, payload: bytes, formatVersion: version)

@@ -31,8 +31,13 @@ final class UpgradeAndUnlockTests: XCTestCase {
             value: InventoryFactory.number(1) + InventoryFactory.string("Existing"),
             extra: InventoryFactory.string("NameProperty"))
         let unknown = InventoryFactory.tag("FutureFlag", type: "IntProperty", value: InventoryFactory.number(77))
-        let mapBody = InventoryFactory.number(0) + InventoryFactory.number(1)
-            + InventoryFactory.string("DT_GameEntitlement_Test") + array + unknown + InventoryFactory.string("None")
+        let mapBody = fixtureBytes(
+            InventoryFactory.number(0),
+            InventoryFactory.number(1),
+            InventoryFactory.string("DT_GameEntitlement_Test"),
+            array,
+            unknown,
+            InventoryFactory.string("None"))
         let inner = InventoryFactory.structure("GrantedEntitlements", type: "GrantedEntitlements", value: mapBody)
         let outer = InventoryFactory.tag("GrantedEntitlements", type: "MapProperty", value: inner,
             extra: InventoryFactory.string("NameProperty") + InventoryFactory.string("StructProperty"))
@@ -119,8 +124,8 @@ final class UpgradeAndUnlockTests: XCTestCase {
         records.append(RuntimeValue(name: "NumUpgrades", type: 14, bytes: InventoryFactory.number(1)))
         var body = InventoryFactory.number(0) + InventoryFactory.number(UInt32(records.count))
         for value in records {
-            body += InventoryFactory.string(value.name) + InventoryFactory.number(value.type)
-                + InventoryFactory.number(UInt32(value.bytes.count)) + value.bytes
+            body += fixtureBytes(InventoryFactory.string(value.name), InventoryFactory.number(value.type),
+                InventoryFactory.number(UInt32(value.bytes.count)), value.bytes)
         }
         let payload = try PayloadPatcher.apply([BytePatch(range: runtime.property.dataRange, bytes: body)],
             to: doc.container.payload, sections: doc.sections)

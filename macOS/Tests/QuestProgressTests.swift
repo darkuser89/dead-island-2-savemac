@@ -5,8 +5,8 @@ import XCTest
 final class QuestProgressTests: XCTestCase {
     let profile = "0123456789ABCDEF0123456789ABCDEF"
     func component(_ key: String, _ type: String, fields: [UInt8]) -> [UInt8] {
-        InventoryFactory.string(key) + InventoryFactory.string("/Script/" + type)
-            + InventoryFactory.number(0) + fields + InventoryFactory.string("None")
+        fixtureBytes(InventoryFactory.string(key), InventoryFactory.string("/Script/" + type),
+            InventoryFactory.number(0), fields, InventoryFactory.string("None"))
     }
     func state(_ prefix: String, _ state: String) -> [UInt8] {
         InventoryFactory.tag("State", type: "EnumProperty", value: InventoryFactory.string(prefix + "::" + state), extra: InventoryFactory.string(prefix))
@@ -23,7 +23,11 @@ final class QuestProgressTests: XCTestCase {
         let objective = component("/game/missions/mis_test01/obj_test01.obj_test01", "DeadIsland.DIObjectivePersistentDataCollection",
             fields: InventoryFactory.tag("DisplayIndex", type: "IntProperty", value: InventoryFactory.number(1)) + state("EObjectiveState", "Started"))
         let next = component("mis_test02", "DeadIsland.DIQuestInstancePersistentDataCollection", fields: state("EMissionState", "Waiting"))
-        let bytes = quest + checkpoint + objective + next
+        let bytes = fixtureBytes(
+            quest,
+            checkpoint,
+            objective,
+            next)
         var payload = InventoryFactory.number(2)
         payload += InventoryFactory.string("CharacterProfileAccount")
         payload += InventoryFactory.number(1)

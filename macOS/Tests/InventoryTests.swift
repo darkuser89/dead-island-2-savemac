@@ -2,6 +2,12 @@
 import XCTest
 @testable import SaveCore
 
+// Give every fixture fragment a concrete byte-array type before concatenating.
+// Long overloaded + chains can exhaust the Xcode 16 type checker.
+func fixtureBytes(_ fragments: [UInt8]...) -> [UInt8] {
+    fragments.flatMap { $0 }
+}
+
 final class InventoryTests: XCTestCase {
     let profile = "0123456789ABCDEF0123456789ABCDEF"
     let header: [UInt8] = [12, 0, 10, 0, 1, 217, 14, 81]
@@ -31,14 +37,27 @@ final class InventoryTests: XCTestCase {
             + structure("Archetype", "SoftObjectPath", string(asset) + number(0))
         if archetype { body += tag("Count", "IntProperty", number(7)) }
         else {
-            let procedural = tag("Seed", "IntProperty", number(42))
-                + tag("RequiredRarity", "EnumProperty", string("EItemRarity::Common"), extra: string("EItemRarity"))
-                + tag("RequiredLevel", "IntProperty", number(5)) + string("None")
+            let procedural = fixtureBytes(
+                tag("Seed", "IntProperty", number(42)),
+                tag("RequiredRarity", "EnumProperty", string("EItemRarity::Common"), extra: string("EItemRarity")),
+                tag("RequiredLevel", "IntProperty", number(5)),
+                string("None"))
             body += structure("ProceduralGenerationContext", "ProceduralGenerationContext", procedural)
-            let runtime = number(0) + number(3)
-                + string("Durability") + number(10) + number(4) + number(Float(50).bitPattern)
-                + string("NumUpgrades") + number(14) + number(4) + number(0)
-                + string("OpaqueValue") + number(99) + number(3) + [21, 22, 23]
+            let runtime = fixtureBytes(
+                number(0),
+                number(3),
+                string("Durability"),
+                number(10),
+                number(4),
+                number(Float(50).bitPattern),
+                string("NumUpgrades"),
+                number(14),
+                number(4),
+                number(0),
+                string("OpaqueValue"),
+                number(99),
+                number(3),
+                [21, 22, 23])
             body += tag("RuntimeState", "MapProperty",
                 structure("RuntimeState", "InventoryPersistentStateEntry", runtime),
                 extra: string("StrProperty") + string("StructProperty"))
@@ -144,7 +163,12 @@ final class InventoryTests: XCTestCase {
     }
 
     func testPropertyTypeAtStartOfSectionDoesNotTrap() {
-        let bytes = string("IntProperty") + number(4) + number(0) + [0] + number(1)
+        let bytes = fixtureBytes(
+            string("IntProperty"),
+            number(4),
+            number(0),
+            [0],
+            number(1))
         let section = SaveSection(name: profile, range: 0..<bytes.count)
         XCTAssertTrue(UnrealProperty.scan(bytes, section: section).isEmpty)
     }

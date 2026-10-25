@@ -5,13 +5,13 @@ import XCTest
 final class WorldStateTests: XCTestCase {
     let section = "0123456789ABCDEF0123456789ABCDEF"
     func component(_ kind: String, field: String, value: Bool, footer: UInt32 = 0) -> [UInt8] {
-        InventoryFactory.string("Component") + InventoryFactory.string(kind) + InventoryFactory.number(0)
-            + InventoryFactory.string(field) + InventoryFactory.string("BoolProperty") + InventoryFactory.number(0)
-            + InventoryFactory.number(0) + [value ? 1 : 0,0] + InventoryFactory.string("None") + InventoryFactory.number(footer)
+        fixtureBytes(InventoryFactory.string("Component"), InventoryFactory.string(kind), InventoryFactory.number(0),
+            InventoryFactory.string(field), InventoryFactory.string("BoolProperty"), InventoryFactory.number(0),
+            InventoryFactory.number(0), [value ? 1 : 0, 0], InventoryFactory.string("None"), InventoryFactory.number(footer))
     }
     func node(_ name: String, children: [[UInt8]] = [], records: [[UInt8]] = []) -> [UInt8] {
-        InventoryFactory.string(name) + InventoryFactory.number(UInt32(children.count)) + InventoryFactory.number(UInt32(records.count))
-            + children.flatMap { $0 } + records.flatMap { $0 }
+        fixtureBytes(InventoryFactory.string(name), InventoryFactory.number(UInt32(children.count)), InventoryFactory.number(UInt32(records.count)),
+            children.flatMap { $0 }, records.flatMap { $0 })
     }
     func fixture(badFooter: Bool = false) throws -> SaveDocument {
         let door = component("/Script/Openable.OpenablePersistentDataCollection", field: "bIsOpen", value: true, footer: badFooter ? 7 : 0)

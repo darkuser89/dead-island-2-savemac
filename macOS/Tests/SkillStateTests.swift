@@ -21,24 +21,43 @@ final class SkillStateTests: XCTestCase {
     }
     func fixture() throws -> SaveDocument {
         let end = InventoryFactory.string("None")
-        let active = object("Category", category) + byte(0) + object("SkillDefinition", cardA)
-            + InventoryFactory.tag("FutureData", type: "IntProperty", value: InventoryFactory.number(73)) + end
+        let active = fixtureBytes(
+            object("Category", category),
+            byte(0),
+            object("SkillDefinition", cardA),
+            InventoryFactory.tag("FutureData", type: "IntProperty", value: InventoryFactory.number(73)),
+            end)
         let slots = object("SkillSubCategory", sub)
             + InventoryFactory.tag("SlotIndexes", type: "ArrayProperty", value: InventoryFactory.number(1) + [0], extra: InventoryFactory.string("ByteProperty")) + end
-        let flag = InventoryFactory.string("bCategoryUnlocked") + InventoryFactory.string("BoolProperty")
-            + InventoryFactory.number(0) + InventoryFactory.number(0) + [1,0]
-        let categoryRow = array("SkillSlots", "SkillSlotUnlocks", [slots]) + strings("Skills", [cardA])
-            + InventoryFactory.tag("TransferReasons", type: "SetProperty", value: InventoryFactory.number(0) + InventoryFactory.number(0), extra: InventoryFactory.string("NameProperty")) + flag + end
+        let flag = fixtureBytes(
+            InventoryFactory.string("bCategoryUnlocked"),
+            InventoryFactory.string("BoolProperty"),
+            InventoryFactory.number(0),
+            InventoryFactory.number(0),
+            [1,0])
+        let categoryRow = fixtureBytes(
+            array("SkillSlots", "SkillSlotUnlocks", [slots]),
+            strings("Skills", [cardA]),
+            InventoryFactory.tag("TransferReasons", type: "SetProperty", value: InventoryFactory.number(0) + InventoryFactory.number(0), extra: InventoryFactory.string("NameProperty")),
+            flag,
+            end)
         let map = InventoryFactory.structure("SkillCategoryUnlocks", type: "SkillCategoryUnlocks", value:
             InventoryFactory.number(0) + InventoryFactory.number(1) + InventoryFactory.string(category) + categoryRow)
         let introducedSlots = [(category, UInt8(0)), (category, UInt8(1)), (second, UInt8(0))].map {
-            object("Category", $0.0) + object("SubCategory", sub) + byte($0.1) + end
+            fixtureBytes(object("Category", $0.0), object("SubCategory", sub), byte($0.1), end)
         }
-        let fields = InventoryFactory.structure("ActiveSkillRecords", type: "ActiveSkillRecordCollection", value: array("Records", "ActiveSkillRecord", [active]) + end)
-            + InventoryFactory.tag("SkillCategoryUnlocks", type: "MapProperty", value: map, extra: InventoryFactory.string("ObjectProperty") + InventoryFactory.string("StructProperty"))
-            + strings("RevealedSkills", [cardA]) + strings("IntroducedSkills", [cardA, cardB, cardC])
-            + array("IntroducedSlots", "SkillSlotRecord", introducedSlots)
-        let component = InventoryFactory.string("ActiveSkills") + InventoryFactory.string("/Script/DeadIsland.SkillSlotsPersistentData") + InventoryFactory.number(0) + fields + end
+        let fields = fixtureBytes(
+            InventoryFactory.structure("ActiveSkillRecords", type: "ActiveSkillRecordCollection", value: array("Records", "ActiveSkillRecord", [active]) + end),
+            InventoryFactory.tag("SkillCategoryUnlocks", type: "MapProperty", value: map, extra: InventoryFactory.string("ObjectProperty") + InventoryFactory.string("StructProperty")),
+            strings("RevealedSkills", [cardA]),
+            strings("IntroducedSkills", [cardA, cardB, cardC]),
+            array("IntroducedSlots", "SkillSlotRecord", introducedSlots))
+        let component = fixtureBytes(
+            InventoryFactory.string("ActiveSkills"),
+            InventoryFactory.string("/Script/DeadIsland.SkillSlotsPersistentData"),
+            InventoryFactory.number(0),
+            fields,
+            end)
         var payload = InventoryFactory.number(2)
         payload += InventoryFactory.string("CharacterProfileAccount")
         payload += InventoryFactory.number(1)

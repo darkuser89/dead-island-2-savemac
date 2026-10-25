@@ -7,8 +7,12 @@ final class CharacterInfoTests: XCTestCase {
         let name = "0123456789ABCDEF0123456789ABCDEF"
         let fields = InventoryFactory.tag("CharacterType", type: "ObjectProperty", value: InventoryFactory.string("/Game/DI2/Core/DA_CharacterManager_Berserker.DA_CharacterManager_Berserker"))
             + InventoryFactory.tag("CharacterGender", type: "EnumProperty", value: InventoryFactory.string("ECharacterGender::Male"), extra: InventoryFactory.string("ECharacterGender")) + InventoryFactory.string("None")
-        let body = InventoryFactory.string("CharacterData") + InventoryFactory.string("/Script/DeadIsland.CharacterProfile") + InventoryFactory.number(0)
-            + InventoryFactory.structure("CharacterArchetype", type: "CharacterArchetype", value: fields) + InventoryFactory.string("None")
+        let body = fixtureBytes(
+            InventoryFactory.string("CharacterData"),
+            InventoryFactory.string("/Script/DeadIsland.CharacterProfile"),
+            InventoryFactory.number(0),
+            InventoryFactory.structure("CharacterArchetype", type: "CharacterArchetype", value: fields),
+            InventoryFactory.string("None"))
         var payload = InventoryFactory.number(2)
         payload += InventoryFactory.string("CharacterProfileAccount")
         payload += InventoryFactory.number(1)
