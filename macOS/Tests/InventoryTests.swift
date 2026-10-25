@@ -12,7 +12,14 @@ final class InventoryTests: XCTestCase {
     }
     func number(_ value: UInt32) -> [UInt8] { var out: [UInt8] = []; out.appendLE(value); return out }
     func tag(_ name: String, _ type: String, _ body: [UInt8], extra: [UInt8] = []) -> [UInt8] {
-        string(name) + string(type) + number(UInt32(body.count)) + number(0) + extra + [0] + body
+        var bytes = string(name)
+        bytes += string(type)
+        bytes += number(UInt32(body.count))
+        bytes += number(0)
+        bytes += extra
+        bytes.append(0)
+        bytes += body
+        return bytes
     }
     func structure(_ name: String, _ type: String, _ body: [UInt8]) -> [UInt8] {
         tag(name, "StructProperty", body, extra: string(type) + [UInt8](repeating: 0, count: 16))

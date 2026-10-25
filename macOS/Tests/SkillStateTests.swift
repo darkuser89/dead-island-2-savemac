@@ -39,8 +39,13 @@ final class SkillStateTests: XCTestCase {
             + strings("RevealedSkills", [cardA]) + strings("IntroducedSkills", [cardA, cardB, cardC])
             + array("IntroducedSlots", "SkillSlotRecord", introducedSlots)
         let component = InventoryFactory.string("ActiveSkills") + InventoryFactory.string("/Script/DeadIsland.SkillSlotsPersistentData") + InventoryFactory.number(0) + fields + end
-        let payload = InventoryFactory.number(2) + InventoryFactory.string("CharacterProfileAccount") + InventoryFactory.number(1) + [0]
-            + InventoryFactory.string(section) + InventoryFactory.number(UInt32(component.count)) + component
+        var payload = InventoryFactory.number(2)
+        payload += InventoryFactory.string("CharacterProfileAccount")
+        payload += InventoryFactory.number(1)
+        payload.append(0)
+        payload += InventoryFactory.string(section)
+        payload += InventoryFactory.number(UInt32(component.count))
+        payload += component
         return try SaveDocument(data: SaveContainer(header: [12,0,10,0,1,217,14,81], payload: payload).encoded())
     }
     func testReadsCardsActiveRecordsAndLockedCategorySlots() throws {

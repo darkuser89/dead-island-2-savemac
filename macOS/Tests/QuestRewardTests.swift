@@ -8,8 +8,13 @@ final class QuestRewardTests: XCTestCase {
         let body = InventoryFactory.tag("XPValue", type: "IntProperty", value: InventoryFactory.number(500))
             + Array(inv.container.payload[inv.sections.first { $0.name == profile }!.range])
             + Array(quest.container.payload[quest.sections.first { $0.name == profile }!.range])
-        let payload = InventoryFactory.number(2) + InventoryFactory.string("CharacterProfileAccount") + InventoryFactory.number(1) + [0]
-            + InventoryFactory.string(profile) + InventoryFactory.number(UInt32(body.count)) + body
+        var payload = InventoryFactory.number(2)
+        payload += InventoryFactory.string("CharacterProfileAccount")
+        payload += InventoryFactory.number(1)
+        payload.append(0)
+        payload += InventoryFactory.string(profile)
+        payload += InventoryFactory.number(UInt32(body.count))
+        payload += body
         return try SaveDocument(data: SaveContainer(header: inv.container.header, payload: payload).encoded())
     }
     func rule(other: [String] = []) -> QuestRewardDefinition {

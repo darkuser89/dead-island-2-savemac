@@ -19,8 +19,13 @@ final class WorldStateTests: XCTestCase {
         let opaque = component("/Script/Cooldown.CooldownPersistentDataCollection", field: "bIsOnCooldown", value: true)
         let body = node("WorldActorState", children: [node("Map", children: [node("Level", children: [
             node("Door", records: [door]), node("Generator", records: [generator]), node("Unrelated", records: [opaque])])])])
-        let payload = InventoryFactory.number(2) + InventoryFactory.string("CharacterProfileAccount") + InventoryFactory.number(1) + [0]
-            + InventoryFactory.string(section) + InventoryFactory.number(UInt32(body.count)) + body
+        var payload = InventoryFactory.number(2)
+        payload += InventoryFactory.string("CharacterProfileAccount")
+        payload += InventoryFactory.number(1)
+        payload.append(0)
+        payload += InventoryFactory.string(section)
+        payload += InventoryFactory.number(UInt32(body.count))
+        payload += body
         return try SaveDocument(data: SaveContainer(header: [10,0,3,0,1,217,14,81], payload: payload).encoded())
     }
     func testReadsExactActorPathsAndKnownSwitches() throws {

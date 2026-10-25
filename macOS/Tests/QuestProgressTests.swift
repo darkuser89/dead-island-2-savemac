@@ -24,8 +24,13 @@ final class QuestProgressTests: XCTestCase {
             fields: InventoryFactory.tag("DisplayIndex", type: "IntProperty", value: InventoryFactory.number(1)) + state("EObjectiveState", "Started"))
         let next = component("mis_test02", "DeadIsland.DIQuestInstancePersistentDataCollection", fields: state("EMissionState", "Waiting"))
         let bytes = quest + checkpoint + objective + next
-        let payload = InventoryFactory.number(2) + InventoryFactory.string("CharacterProfileAccount") + InventoryFactory.number(1) + [0]
-            + InventoryFactory.string(profile) + InventoryFactory.number(UInt32(bytes.count)) + bytes
+        var payload = InventoryFactory.number(2)
+        payload += InventoryFactory.string("CharacterProfileAccount")
+        payload += InventoryFactory.number(1)
+        payload.append(0)
+        payload += InventoryFactory.string(profile)
+        payload += InventoryFactory.number(UInt32(bytes.count))
+        payload += bytes
         return try SaveDocument(data: SaveContainer(header: [12,0,10,0,1,217,14,81], payload: payload).encoded())
     }
     func testFindsQuestsObjectivesAndSeparateCheckpointRecords() throws {
